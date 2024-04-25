@@ -9,15 +9,16 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080808] h-[95vh] lg:h-[85vh] flex flex-col items-center justify-center">
+    <footer className=" bg-gradient-gleam h-[95vh] lg:h-[85vh] flex flex-col items-center justify-center">
       <SparklesCore
         background="transparent"
         minSize={0.3}
         maxSize={1}
         particleDensity={100}
-        className="absolute w-full h-[80vh]"
+        className="absolute w-full h-[80vh] z-0"
         particleColor="#FFFFFF"
       />
+
       <div className="flex justify-center items-center h-[85%] lg:gap-8 pt-10">
         <Image
           className="object-contain h-[5rem] w-auto lg:h-[7rem] mr-5 lg:mr-0 imgNeon"
@@ -28,7 +29,7 @@ export default function Footer() {
         />
       </div>
 
-      <div className="flex flex-col justify-center items-center z-10">
+      <div className="relative flex flex-col justify-center items-center">
         <div className="flex gap-4 flex-col lg:flex-row text-white text-center">
           <Link
             href="/"
@@ -74,13 +75,13 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="flex gap-4 flex-col lg:flex-row text-white text-center pt-5">
+        <div className="flex gap-4 flex-col justify-center items-center lg:flex-row text-white text-center pt-5">
           <a
-            href=""
+            href="mailto:contact@inthegleam.com"
             className="flex items-center gap-2 text-sm hover:text-[#b080dd] transition-all ease-in-out"
           >
             <FontAwesomeIcon icon={faEnvelope} size="2x" />
-            contact@inthegleam.fr
+            contact@inthegleam.com
           </a>
           <Link
             href="https://www.instagram.com/inthe_gleam/"

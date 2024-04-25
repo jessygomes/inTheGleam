@@ -6,7 +6,7 @@ export default function HomeSection1() {
   return (
     <>
       <section className="bg-[#080808] h-[85%] shadow-2xl">
-        <div className="w-full absolute inset-0 h-screen">
+        <div className="w-full absolute inset-0 h-screen z-0">
           <SparklesCore
             id="tsparticlesAccueil"
             background="transparent"
@@ -24,21 +24,21 @@ export default function HomeSection1() {
             </span>
             eb design &{" "}
             <span className="sm-hidden">
-              <span className="w-gleam font-DissolveRegular mr-2 text-4xl lg:text-7xl">
+              <span className="w-gleam font-DissolveRegular text-4xl lg:text-7xl">
                 W
               </span>
               eb
             </span>{" "}
             Développement
           </h1>
-          <p className="font-Gudea tracking-widest lg:p-0 px-4 text-xs lg:text-xl max-w-[50em] mx-auto title-section1">
+          <p className="font-Gudea tracking-widest lg:p-0 text-xs lg:text-xl max-w-[50em] mx-auto title-section1">
             Nous développons des solutions digitales sur-mesure en collaboration
             avec nos clients pour répondre à leurs besoins numériques...
           </p>
-          <button className="tracking-[.25em] mt-4 lg:mt-4 lg:tracking-[.55em] nav-button">
+          <button className="tracking-[.25em] lg:mt-4 lg:tracking-[.55em] mt-1 z-50">
             <Link
               href="/contact"
-              className="font-Gudea font-semibold text-xs lg:text-xl bg-purple2 rounded-full px-3 p-3 lg:p-3 lg:px-5 uppercase RDV"
+              className="font-Gudea font-semibold text-xs lg:text-xl bg-purple2 rounded-md p-3 lg:p-3 lg:px-5 uppercase RDV"
             >
               Prendre un rendez-vous
             </Link>

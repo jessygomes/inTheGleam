@@ -15,6 +15,20 @@
   src: url("../../public/fonts/REZ.ttf") format("truetype");
 }
 
+.bg-gradient-gleam {
+  background: linear-gradient(
+    180deg,
+    #080808 7.5%,
+    #0d0812 22.5%,
+    #13081e 37%,
+    #1f0736 53%,
+    #34075f 69%,
+    #42067a 85%,
+    #470683 99.97%,
+    #4f0694 99.98%
+  );
+}
+
 .neon {
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #fff, 0 0 10px #fff,
@@ -115,14 +129,24 @@ body {
 @keyframes changeColor {
   0% {
     color: white;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 5px #fff,
+      0 0 0px #fff, 0 0 0px #fff;
+  }
+
+  25% {
+    color: white;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff,
+      0 0 0px #fff, 0 0 0px #fff;
   }
 
   50% {
-    color: #4f0694;
+    color: #4f069471;
   }
 
   100% {
     color: white;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 5px #fff,
+      0 0 0px #fff, 0 0 0px #fff;
   }
 }
 
