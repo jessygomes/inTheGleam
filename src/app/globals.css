@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +30,168 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .hide-lg {
+    display: none;
+  }
+}
+
+.w-trait {
+  width: 920px;
+}
+
+.tech {
+  box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.w-gleam {
+  animation: changeColor 6s infinite;
+}
+
+.w-img {
+  width: 455px;
+}
+
+.nav-active {
+  border-bottom: 2px solid #4f0694;
+}
+
+.nostech {
+  background-image: url("/fond_purple2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Le reste de votre style existant */
+
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: #4f0694;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+/* SECTION 1 - HOME */
+@media (max-width: 640px) {
+  .sm-hidden {
+    display: none;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-button {
+    height: 90px;
+  }
+
+  .title-section1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* .title-main {
+    font-size: 25px;
+  } */
+
+  .title-section2 {
+    justify-content: center;
+  }
+
+  /* .bloc-section2 {
+    text-align: center;
+  } */
+
+  .content-section2 {
+    margin-bottom: 35px;
+  }
+
+  .sm-text-purple {
+    color: #4f0694;
+  }
+
+  .type-site {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .md-hidden {
+    display: none;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lg-hidden {
+    display: none;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+}
+
+/* SECTION 2 - HOME */
+
+/* SECTION 3 - HOME */
+
+@media (max-width: 640px) {
+  .sm-content-s3 {
+    padding: 15px;
+  }
+}
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+} */
+
+.fade-in-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fade-in-out.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Reveal Effect */
+
+.reveal-element {
+  opacity: 0;
+  transform: translateY(20px);
+  /* Décalez l'élément vers le bas */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  /* Animer l'élément vers sa position normale */
 }
