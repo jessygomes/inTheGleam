@@ -35,9 +35,10 @@ export default function Ecommerce() {
           <h3 className="font-Gudea font-semibold lg:text-purple2 sm-text-purple text-2xl">
             Design
           </h3>
-          <p className="font-Gudea text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
             Le site e-Commerce doit correspondre à votre image en gardant
-            l&apos;identité visuelle que vous avez établi.
+            l&apos;identité visuelle que vous avez établi. Nous pouvons vous
+            aider à la développer afin de vous affirmer sur le marché.
           </p>
         </div>
 
@@ -45,8 +46,9 @@ export default function Ecommerce() {
           <h3 className="font-Gudea font-semibold text-2xl">
             Paiement Sécurisé
           </h3>
-          <p className="font-Gudea text-lg text-justify lg:mt-4 content-section2">
-            Solutions de paiement pour assurer le bon fonctionnement.
+          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
+            Solutions de paiement pour assurer le bon fonctionnement et la
+            gestion de votre site.
           </p>
         </div>
       </article>
@@ -56,7 +58,7 @@ export default function Ecommerce() {
           <h3 className="font-Gudea font-semibold  sm-text-purple text-2xl">
             Gestion simple
           </h3>
-          <p className="font-Gudea text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
             Mise en place de votre gestion sans connaissances préalables en
             développement.
           </p>
@@ -66,7 +68,7 @@ export default function Ecommerce() {
           <h3 className="font-Gudea font-semibold lg:text-purple2 text-2xl">
             Multi-langue
           </h3>
-          <p className="font-Gudea text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
             Etendre la vente à l&apos;international grâce à la traduction de
             votre site et donc une chance d&apos;augmenter vos ventes.
           </p>

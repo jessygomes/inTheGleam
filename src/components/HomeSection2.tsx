@@ -22,14 +22,14 @@ export default function HomeSection2() {
           <h3 className="font-Gudea font-semibold lg:text-purple2 sm-text-purple text-2xl">
             Gestion de projet web
           </h3>
-          <p className="font-Gudea text-lg lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
             Site vitrine, site e-commerce, corporate, événementiel
           </p>
         </div>
 
         <div className="flex flex-col lg:w-[45%]" aria-label="intégration web">
           <h3 className="font-Gudea font-semibold text-2xl">Intégration WEB</h3>
-          <p className="font-Gudea text-lg lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
             Intégration HTML / CSS respectueuses des standards du web
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function HomeSection2() {
           <h3 className="font-Gudea font-semibold sm-text-purple text-2xl">
             Web Design
           </h3>
-          <p className="font-Gudea text-lg lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
             Permettre aux utilisateurs de rentrer dans votre UNIVERS. Répondre
             au mieux à votre identité visuelle.
           </p>
@@ -53,7 +53,7 @@ export default function HomeSection2() {
           <h3 className="font-Gudea font-semibold lg:text-purple2 text-2xl">
             Responsive Design
           </h3>
-          <p className="font-Gudea text-lg lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
             Compatible sur tous les supports, tablettes & mobiles
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function HomeSection2() {
           <h3 className="font-Gudea font-semibold lg:text-purple2 sm-text-purple text-2xl">
             Maintenance site internet
           </h3>
-          <p className="font-Gudea text-lg lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
             Gérer la maintenance de vos sites web permet d&apos;assurer leur
             pérennité
           </p>
@@ -80,7 +80,7 @@ export default function HomeSection2() {
           <h3 className="font-Gudea font-semibold text-2xl">
             Référencement naturel
           </h3>
-          <p className="font-Gudea text-lg lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
             Affichage sémantique des informations pour un référencement optimal
           </p>
         </div>
