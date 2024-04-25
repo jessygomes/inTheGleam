@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { SparklesCore } from "../ui/vortex";
 
 const itemNavbar = [
   {
@@ -39,30 +40,46 @@ export default function Navbar() {
     setNavActive(!navActive);
   };
 
+  const pathname = usePathname();
+
   //! NAVBAR SCROLL
   useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 50;
-      if (isScrolled !== scrolled) {
-        setScrolled(!scrolled);
-      }
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrolled]);
-
-  const pathname = usePathname();
+    if (pathname === "/") {
+      // vérifie si nous sommes sur la page d'accueil
+      const handleScroll = () => {
+        const isScrolled = window.scrollY > 50;
+        if (isScrolled !== scrolled) {
+          setScrolled(!scrolled);
+        }
+      };
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      setScrolled(true); // active l'arrière-plan pour toutes les autres pages
+    }
+  }, [scrolled, pathname]);
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-      <nav className="">
+      <div className="w-full absolute h-[100%]">
+        <SparklesCore
+          id="tsparticlesHeader"
+          background="transparent"
+          minSize={0.3}
+          maxSize={1}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+      </div>
+      <nav className={styles.nav}>
         <div className="flex justify-center">
           <Link href="/">
             <Image
               className={styles.headerLogo}
-              src="/logos/Logo_inTheGleam_Blanc.png"
+              src="/logos/Logo_icon_inTheGleam_White.png"
               alt="Logo intTheGleam"
               width={400}
               height={400}
@@ -95,6 +112,7 @@ export default function Navbar() {
               <div key={index}>
                 <Link
                   href={item.link}
+                  onClick={handleClick}
                   className={`${styles.nav__item} ${
                     active ? styles.activeLink : ""
                   }`}

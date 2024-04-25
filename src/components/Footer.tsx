@@ -2,10 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { SparklesCore } from "./ui/vortex";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080808] h-[80vh] flex flex-col items-center justify-center">
+    <footer className="bg-[#080808] h-[95vh] lg:h-[85vh] flex flex-col items-center justify-center">
       <SparklesCore
         background="transparent"
         minSize={0.3}
@@ -16,7 +20,7 @@ export default function Footer() {
       />
       <div className="flex justify-center items-center h-[85%] lg:gap-8 pt-10">
         <Image
-          className="object-contain h-[5rem] w-auto lg:h-[7rem] mr-5 lg:mr-0"
+          className="object-contain h-[5rem] w-auto lg:h-[7rem] mr-5 lg:mr-0 imgNeon"
           src="/logos/Logo_Inline_inTheGleam_Blanc.png"
           alt="logo inthegleam"
           width={300}
@@ -26,39 +30,65 @@ export default function Footer() {
 
       <div className="flex flex-col justify-center items-center z-10">
         <div className="flex gap-4 flex-col lg:flex-row text-white text-center">
-          <Link href="/" className=" text-sm">
+          <Link
+            href="/"
+            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+          >
             Accueil
           </Link>
-          <Link href="/vitrine" className=" text-sm">
+          <Link
+            href="/vitrine"
+            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+          >
             Site Vitrine
           </Link>
-          <Link href="/e-commerce" className=" text-sm">
+          <Link
+            href="/e-commerce"
+            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+          >
             Site E-Commerce
           </Link>
-          <Link href="/a-propos" className=" text-sm">
+          <Link
+            href="/a-propos"
+            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+          >
             A Propos de nous
           </Link>
-          <Link href="/contact" className=" text-sm">
+          <Link
+            href="/contact"
+            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+          >
             Contact
           </Link>
-          <Link href="/" className=" text-sm">
+          <Link
+            href="/mentions-legales"
+            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+          >
             Mentions légales
           </Link>
-          <Link href="/" className=" text-sm">
+          <Link
+            href="/politique-de-confidentialite"
+            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+          >
             Politique de confidentialité
           </Link>
         </div>
 
         <div className="flex gap-4 flex-col lg:flex-row text-white text-center pt-5">
-          <a href="" className=" text-sm">
-            Mail : contact@inthegleam.fr
+          <a
+            href=""
+            className="flex items-center gap-2 text-sm hover:text-[#b080dd] transition-all ease-in-out"
+          >
+            <FontAwesomeIcon icon={faEnvelope} size="2x" />
+            contact@inthegleam.fr
           </a>
           <Link
             href="https://www.instagram.com/inthe_gleam/"
             target="_blank"
-            className=" text-sm"
+            className="flex items-center gap-2 text-sm hover:text-[#b080dd] transition-all ease-in-out"
           >
-            Instagram : @inthe_gleam
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
+            @inthe_gleam
           </Link>
         </div>
       </div>

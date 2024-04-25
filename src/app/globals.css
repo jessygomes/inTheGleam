@@ -2,6 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Disolve_regular";
+  src: url("../../public/fonts/Disolve_regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gudea-Regular";
+  src: url("../../public/fonts/Gudea-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "REZ";
+  src: url("../../public/fonts/REZ.ttf") format("truetype");
+}
+
+.neon {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #fff, 0 0 10px #fff,
+    0 0 0px #fff, 0 0 0px #fff;
+}
+.neonPurple {
+  box-shadow: 0 0 5px #4f0694, 0 0 10px #4f0694, 0 0 5px #4f0694,
+    0 0 10px #4f0694, 0 0 0px #4f0694, 0 0 0px #4f0694;
+}
+.neonWhite {
+  box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+    0 0 0px #fff, 0 0 0px #fff;
+}
+
+.imgNeon {
+  filter: drop-shadow(0px 0px 2px #ffffff);
+}
+
+.RDV {
+  transition: all 0.3s ease;
+}
+.RDV:hover {
+  background-color: transparent;
+  /* border: #fff solid 1px; */
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 5px #fff,
+    0 0 0px #fff, 0 0 0px #fff;
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

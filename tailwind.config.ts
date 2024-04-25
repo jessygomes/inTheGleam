@@ -7,7 +7,17 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      Gudea: ["Gudea-Regular"],
+      DissolveRegular: ["Disolve_regular"],
+      Rez: ["REZ"],
+    },
     extend: {
+      colors: {
+        purple: "#3D0571",
+        purple2: "#4f0694",
+        blackGleam: "#080808",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

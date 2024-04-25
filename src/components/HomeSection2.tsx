@@ -6,7 +6,7 @@ export default function HomeSection2() {
   return (
     <section className="lg:w-[60%] mx-auto">
       <div
-        className=" mt-8 flex items-center lg:flex-auto mx-auto title-section2"
+        className="mt-8 flex items-center lg:flex-auto mx-auto title-section2"
         id="service"
       >
         <h2 className="font-Gudea uppercase text-4xl mt-4 tracking-[.15em]">
@@ -14,7 +14,7 @@ export default function HomeSection2() {
         </h2>
       </div>
 
-      <article className="flex flex-wrap ml-4 pr-4 md:ml-40 lg:ml-0 lg:mr-0 lg:justify-between mt-12 md:gap-8 lg:gap-3">
+      <article className="flex flex-wrap mx-4 md:ml-40 lg:ml-0 lg:mr-0 lg:justify-between mt-12 md:gap-8 lg:gap-3">
         <div
           className="flex flex-col lg:w-[45%]"
           aria-label="gestion de projet web"
@@ -35,7 +35,7 @@ export default function HomeSection2() {
         </div>
       </article>
 
-      <article className="flex flex-wrap ml-4 pr-4 md:ml-40 lg:ml-0 lg:mr-0 lg:justify-between mt-12 md:gap-8 lg:gap-3">
+      <article className="flex flex-wrap ml-4 pr-4 md:ml-40 lg:ml-0 lg:mr-0 lg:justify-between lg:mt-12  md:gap-8 lg:gap-3">
         <div className="flex flex-col lg:w-[45%]" aria-label="Web Design">
           <h3 className="font-Gudea font-semibold sm-text-purple text-2xl">
             Web Design
@@ -59,7 +59,7 @@ export default function HomeSection2() {
         </div>
       </article>
 
-      <article className="flex flex-wrap ml-4 pr-4 md:ml-40 lg:ml-0 lg:mr-0 lg:justify-between mt-12 md:gap-8 lg:gap-3">
+      <article className="flex flex-wrap ml-4 pr-4 md:ml-40 lg:ml-0 lg:mr-0 lg:justify-between lg:mt-12 md:gap-8 lg:gap-3">
         <div
           className="flex flex-col lg:w-[45%]"
           aria-label="Maintenance site internet"
@@ -87,8 +87,8 @@ export default function HomeSection2() {
       </article>
 
       <RevealEffect>
-        <div className="sm-hidden font-Gudea tracking-widest flex flex-wrap justify-center gap-10 lg:gap-24 md:mt-12 lg:mt-12">
-          <div className="flex flex-col text-center">
+        <div className="sm-hidden font-Gudea tracking-widest flex flex-wrap justify-center items-center gap-10 lg:gap-24 md:mt-12 lg:mt-12">
+          <div className="flex flex-col gap-4 text-center">
             <Image
               className="h-16 w-16 mx-auto"
               src="/gif/com.gif"
@@ -99,7 +99,7 @@ export default function HomeSection2() {
             <p className="text-xl font-bold">Communication</p>
           </div>
 
-          <div className="flex flex-col text-center">
+          <div className="flex flex-col gap-4 text-center">
             <Image
               className="h-16 w-16 mx-auto"
               src="/gif/accord.gif"
@@ -110,7 +110,7 @@ export default function HomeSection2() {
             <p className="text-xl font-bold">Accord</p>
           </div>
 
-          <div className="flex flex-col text-center ml-7 lg:ml-0">
+          <div className="flex flex-col gap-4 text-center ml-7 lg:ml-0">
             <Image
               className="h-16 w-16 mx-auto"
               src="/gif/conception.gif"
@@ -121,7 +121,7 @@ export default function HomeSection2() {
             <p className="text-xl font-bold">Conception</p>
           </div>
 
-          <div className="flex flex-col text-center ml-3 lg:ml-0">
+          <div className="flex flex-col gap-4 text-center ml-3 lg:ml-0">
             <Image
               className="h-16 w-16 mx-auto"
               src="/gif/livraison.gif"

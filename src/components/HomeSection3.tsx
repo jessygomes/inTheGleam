@@ -1,19 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import { SparklesCore } from "./ui/vortex";
 
 export default function HomeSection3() {
   return (
     <section className="flex flex-col">
       <article className="bg-[#080808] text-white shadow-2xl w-full pb-12">
-        <SparklesCore
-          background="transparent"
-          minSize={0.3}
-          maxSize={1}
-          particleDensity={100}
-          className="absolute w-full"
-          particleColor="#FFFFFF"
-        />
         <h3 className="font-DissolveRegular text-center text-4xl lg:text-5xl tracking-widest uppercase mt-6 lg:mt-10 sm-content-s3">
           Le monde digital
         </h3>
