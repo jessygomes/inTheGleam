@@ -1,5 +1,12 @@
 import React from "react";
 import RevealEffect from "../../components/RevealEffect/RevealEffect";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "A Propos | inTheGleam",
+  description:
+    "A Propos de nous : Qui sommes-nous ? Que faisons-nous ? Comment travaillons-nous ?",
+};
 
 export default function Propos() {
   return (

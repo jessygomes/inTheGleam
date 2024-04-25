@@ -1,5 +1,12 @@
 import ContactForm from "@/components/ContactForm";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact | inTheGleam",
+  description:
+    "Contactez-nous : Vous avez un projet ? Besoin de conseils ? Réponse en moins de 24 heures !",
+};
 
 export default function Contact() {
   return (

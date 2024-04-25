@@ -1,4 +1,11 @@
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Site Vitrine | inTheGleam",
+  description:
+    "Le site vitrine : Quels rôles et avantages pour votre entreprise ?",
+};
 
 export default function Vitrine() {
   return (

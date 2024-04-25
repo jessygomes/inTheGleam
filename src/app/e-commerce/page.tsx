@@ -1,4 +1,11 @@
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Site E-Commerce | inTheGleam",
+  description:
+    "Le site e-commerce : Quels rôles et avantages pour votre entreprise ?",
+};
 
 export default function Ecommerce() {
   return (
