@@ -13,14 +13,16 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="">
-      <div className=" h-[100vh]">
+      <div aria-label="Accueil" className=" h-[100vh]">
         <HomeSection1 />
       </div>
-      <HomeSection2 />
-      <div className=" mt-12 lg:mt-20">
+      <div aria-label="Nos Services Web">
+        <HomeSection2 />
+      </div>
+      <div aria-label="Nos technologies" className=" mt-12 lg:mt-20">
         <HomeSection3 />
       </div>
-      <div className=" mt-12">
+      <div aria-label="Nos avantages" className=" mt-12">
         <HomeSection4 />
       </div>
     </main>
