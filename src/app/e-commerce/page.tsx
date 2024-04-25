@@ -42,7 +42,7 @@ export default function Ecommerce() {
           <h3 className="font-Gudea font-semibold lg:text-purple2 sm-text-purple text-2xl">
             Design
           </h3>
-          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg md:text-center lg:text-justify text-justify lg:mt-4 content-section2">
             Le site e-Commerce doit correspondre à votre image en gardant
             l&apos;identité visuelle que vous avez établi. Nous pouvons vous
             aider à la développer afin de vous affirmer sur le marché.
@@ -53,19 +53,19 @@ export default function Ecommerce() {
           <h3 className="font-Gudea font-semibold text-2xl">
             Paiement Sécurisé
           </h3>
-          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
             Solutions de paiement pour assurer le bon fonctionnement et la
             gestion de votre site.
           </p>
         </div>
       </article>
 
-      <article className="type-site flex flex-wrap justify-center md:text-center lg:text-left md:px-6 px-4 lg:p-2 lg:mt-8 md:gap-6 lg:gap-36 bloc-section2">
+      <article className="type-site flex flex-wrap justify-center md:text-center lg:text-left md:px-6 md:mt-5 px-4 lg:p-2 lg:mt-8 md:gap-6 lg:gap-36 bloc-section2">
         <div className="flex flex-col lg:w-1/4">
           <h3 className="font-Gudea font-semibold  sm-text-purple text-2xl">
             Gestion simple
           </h3>
-          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
             Mise en place de votre gestion sans connaissances préalables en
             développement.
           </p>
@@ -75,7 +75,7 @@ export default function Ecommerce() {
           <h3 className="font-Gudea font-semibold lg:text-purple2 text-2xl">
             Multi-langue
           </h3>
-          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
             Etendre la vente à l&apos;international grâce à la traduction de
             votre site et donc une chance d&apos;augmenter vos ventes.
           </p>

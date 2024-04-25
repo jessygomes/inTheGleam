@@ -4,9 +4,9 @@ import RevealEffect from "./RevealEffect/RevealEffect";
 
 export default function HomeSection2() {
   return (
-    <section className="lg:w-[60%] mx-auto">
+    <section className="sm:lg-[90%] lg:w-[60%] mx-auto">
       <div
-        className="mt-8 flex items-center lg:flex-auto mx-auto title-section2"
+        className="mt-8 flex items-center sm:justify-center lg:flex-auto mx-auto title-section2"
         id="service"
       >
         <h2 className="font-Gudea uppercase text-4xl mt-4 tracking-[.15em]">
@@ -14,12 +14,12 @@ export default function HomeSection2() {
         </h2>
       </div>
 
-      <article className="flex flex-wrap mx-4 md:ml-40 lg:ml-0 lg:mr-0 lg:justify-between mt-12 md:gap-8 lg:gap-3">
+      <article className="flex flex-wrap sm:justify-center mx-4 lg:ml-0 lg:mr-0 lg:justify-between mt-12 md:gap-8 lg:gap-3">
         <div
           className="flex flex-col lg:w-[45%]"
           aria-label="gestion de projet web"
         >
-          <h3 className="font-Gudea font-semibold lg:text-purple2 sm-text-purple text-2xl">
+          <h3 className="font-Gudea font-semibold sm:text-center lg:text-left lg:text-purple2 sm-text-purple text-2xl">
             Gestion de projet web
           </h3>
           <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
@@ -28,16 +28,21 @@ export default function HomeSection2() {
         </div>
 
         <div className="flex flex-col lg:w-[45%]" aria-label="intégration web">
-          <h3 className="font-Gudea font-semibold text-2xl">Intégration WEB</h3>
+          <h3 className="font-Gudea font-semibold sm:text-center lg:text-left text-2xl">
+            Intégration WEB
+          </h3>
           <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
             Intégration HTML / CSS respectueuses des standards du web
           </p>
         </div>
       </article>
 
-      <article className="flex flex-wrap ml-4 pr-4 md:ml-40 lg:ml-0 lg:mr-0 lg:justify-between lg:mt-12  md:gap-8 lg:gap-3">
-        <div className="flex flex-col lg:w-[45%]" aria-label="Web Design">
-          <h3 className="font-Gudea font-semibold sm-text-purple text-2xl">
+      <article className="flex flex-wrap ml-4 pr-4 sm:justify-center sm:mt-8 lg:mx-0 lg:justify-between lg:mt-12 md:gap-8 lg:gap-3">
+        <div
+          className="flex flex-col sm:text-center lg:text-left lg:w-[45%]"
+          aria-label="Web Design"
+        >
+          <h3 className="font-Gudea sm:text-center lg:text-left font-semibold sm-text-purple text-2xl">
             Web Design
           </h3>
           <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
@@ -47,37 +52,37 @@ export default function HomeSection2() {
         </div>
 
         <div
-          className="flex flex-col md:mr-56 lg:mr-0 lg:w-[45%]"
+          className="flex flex-col justify-center lg:mr-0 lg:w-[45%]"
           aria-label="Responsive Design"
         >
-          <h3 className="font-Gudea font-semibold lg:text-purple2 text-2xl">
+          <h3 className="font-Gudea font-semibold sm:text-center lg:text-left lg:text-purple2 text-2xl">
             Responsive Design
           </h3>
-          <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
+          <p className="font-Gudea text-m sm:text-center lg:text-left lg:text-lg lg:mt-4 content-section2">
             Compatible sur tous les supports, tablettes & mobiles
           </p>
         </div>
       </article>
 
-      <article className="flex flex-wrap ml-4 pr-4 md:ml-40 lg:ml-0 lg:mr-0 lg:justify-between lg:mt-12 md:gap-8 lg:gap-3">
+      <article className="flex flex-wrap ml-4 pr-4 sm:justify-center sm:mt-8 lg:mx-0 lg:justify-between lg:mt-12 md:gap-8 lg:gap-3">
         <div
           className="flex flex-col lg:w-[45%]"
           aria-label="Maintenance site internet"
         >
-          <h3 className="font-Gudea font-semibold lg:text-purple2 sm-text-purple text-2xl">
+          <h3 className="font-Gudea font-semibold sm:text-center lg:text-left lg:text-purple2 sm-text-purple text-2xl">
             Maintenance site internet
           </h3>
-          <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
+          <p className="font-Gudea text-m sm:text-center lg:text-left lg:text-lg lg:mt-4 content-section2">
             Gérer la maintenance de vos sites web permet d&apos;assurer leur
             pérennité
           </p>
         </div>
 
         <div
-          className="flex flex-col md:mr-56 lg:mr-0 lg:w-[45%]"
+          className="flex flex-col lg:mr-0 lg:w-[45%]"
           aria-label="Référencement naturel"
         >
-          <h3 className="font-Gudea font-semibold text-2xl">
+          <h3 className="font-Gudea sm:text-center lg:text-left font-semibold text-2xl">
             Référencement naturel
           </h3>
           <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">

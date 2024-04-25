@@ -33,7 +33,7 @@ export default function Vitrine() {
           <h3 className="font-Gudea font-semibold lg:text-purple2 sm-text-purple text-2xl">
             Design
           </h3>
-          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
             Votre site vitrine doit correspondre à votre image en gardant
             l&apos;identité visuelle que vous avez établie.
           </p>
@@ -41,19 +41,19 @@ export default function Vitrine() {
 
         <div className="flex flex-col lg:w-1/4">
           <h3 className="font-Gudea font-semibold text-2xl">Simplicité</h3>
-          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
             L&apos;utilisateur doit trouver les données ou les informations
             rapidement & facilement.
           </p>
         </div>
       </article>
 
-      <article className="type-site flex flex-wrap justify-center md:text-center lg:text-left lg:p-0 md:px-6 px-4 lg:mt-8 md:gap-6 lg:gap-36 bloc-section2">
+      <article className="type-site flex flex-wrap justify-center md:text-center lg:text-left md:px-6 md:mt-5 px-4 lg:p-2 lg:mt-8 md:gap-6 lg:gap-36 bloc-section2">
         <div className="flex flex-col lg:w-1/4">
           <h3 className="font-Gudea font-semibold  sm-text-purple text-2xl">
             Compatibilité
           </h3>
-          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
             Le site vitrine doit être responsive : il doit être accessible sur
             mobiles, tablettes & ordinateurs avec une organisation adaptée.
           </p>
@@ -63,7 +63,7 @@ export default function Vitrine() {
           <h3 className="font-Gudea font-semibold lg:text-purple2 text-2xl">
             Rapidité
           </h3>
-          <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-4 content-section2">
+          <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
             La rapidité est un élément de confort & de satisfaction auprès de
             vos utilisateurs et bénéfique pour votre référencement
           </p>

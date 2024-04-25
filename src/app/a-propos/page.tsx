@@ -43,7 +43,7 @@ export default function Propos() {
         </p>
       </div>
 
-      <div className="font-Gudea flex flex-col mt-10">
+      <div className="font-Gudea flex flex-col mt-10 ">
         <h1 className="text-2xl lg:text-4xl text-center font-bold uppercase mx-auto tracking-[.15em]">
           Création sur-mesure !
         </h1>
@@ -54,7 +54,7 @@ export default function Propos() {
         </p>
       </div>
       <RevealEffect>
-        <div className="type-site flex flex-wrap justify-center md:text-center lg:text-left lg:p-0 px-4  mt-8 md:gap-6 lg:gap-36 bloc-section2">
+        <div className="type-site flex flex-wrap justify-center md:text-center lg:text-left lg:p-0 px-4  mt-8 md:gap-6 md:px-10 lg:px-0 lg:gap-36 bloc-section2">
           <div className="flex flex-col lg:w-1/4">
             <h3 className="font-Gudea font-semibold lg:text-purple2 sm-text-purple text-2xl">
               Diagnostic
@@ -76,7 +76,7 @@ export default function Propos() {
             </p>
           </div>
         </div>
-        <div className="type-site flex flex-wrap justify-center md:text-center lg:text-left lg:p-0 px-4 md:mt-6 lg:mt-8 md:gap-6 lg:gap-36 bloc-section2">
+        <div className="type-site flex flex-wrap justify-center md:text-center lg:text-left lg:p-0 px-4 md:mt-6 lg:mt-8 md:gap-6 md:px-10 lg:px-0 lg:gap-36 bloc-section2">
           <div className="flex flex-col lg:w-1/4">
             <h3 className="font-Gudea font-semibold sm-text-purple text-2xl">
               Flexibilité

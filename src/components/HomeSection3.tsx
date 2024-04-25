@@ -5,11 +5,11 @@ export default function HomeSection3() {
   return (
     <section className="flex flex-col">
       <article className="bg-[#080808] text-white shadow-2xl w-full pb-12">
-        <h3 className="font-DissolveRegular text-center text-4xl lg:text-5xl tracking-widest uppercase mt-6 lg:mt-10 sm-content-s3">
+        <h3 className=" font-DissolveRegular text-center text-4xl lg:text-5xl tracking-[.25em] uppercase mt-12 mb-7 lg:mt-16 ">
           Le monde digital
         </h3>
 
-        <p className="lg:w-[70%] mx-auto font-Gudea text-m mt-2 sm-content-s3 md:pl-10 md:pr-10 lg:mt-10 2xl:w-[80%]">
+        <p className="lg:w-[70%] mx-auto font-Gudea text-m mt-2 sm:mt-0 sm-content-s3 md:px-10 lg:mt-10 2xl:w-[80%]">
           Votre présence sur internet est devenu indispensable dans ce monde qui
           se digitalise de plus en plus chaque jour. Se réinventer, se
           transformer, se digitaliser afin de répondre aux besoins, aux

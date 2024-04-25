@@ -17,28 +17,28 @@ export default function HomeSection1() {
             particleColor="#FFFFFF"
           />
         </div>
-        <div className="relative pt-[147px] lg:pt-[164px] text-white text-center flex flex-col gap-[1rem] my-auto z-40">
-          <h1 className="mt-16 lg:mt-20 font-semibold text-center text-xl lg:text-4xl tracking-[.35em] uppercase title-section1">
-            <span className="w-gleam font-DissolveRegular mr-2 text-4xl lg:text-7xl">
+        <div className="relative pt-[147px] lg:pt-[164px] text-white text-center flex flex-col gap-[1rem] md:gap-12 lg:gap-4 my-auto z-40">
+          <h1 className="mt-16 sm:mt-[15rem] lg:mt-20 font-semibold text-center text-xl sm:text-4xl tracking-[.35em] uppercase title-section1">
+            <span className="w-gleam font-DissolveRegular mr-2 text-4xl sm:text-7xl">
               W
             </span>
             eb design &{" "}
             <span className="sm-hidden">
-              <span className="w-gleam font-DissolveRegular text-4xl lg:text-7xl">
+              <span className="w-gleam font-DissolveRegular text-4xl sm:text-7xl">
                 W
               </span>
               eb
             </span>{" "}
             Développement
           </h1>
-          <p className="font-Gudea tracking-widest lg:p-0 text-xs lg:text-xl max-w-[50em] mx-auto title-section1">
+          <p className="font-Gudea tracking-widest lg:p-0 text-xs md:px-4 sm:text-lg lg:text-xl max-w-[50em] mx-auto title-section1">
             Nous développons des solutions digitales sur-mesure en collaboration
             avec nos clients pour répondre à leurs besoins numériques...
           </p>
           <button className="tracking-[.25em] lg:mt-4 lg:tracking-[.55em] mt-1 z-50">
             <Link
               href="/contact"
-              className="font-Gudea font-semibold text-xs lg:text-xl bg-purple2 rounded-md p-3 lg:p-3 lg:px-5 uppercase RDV"
+              className="font-Gudea font-semibold text-xs sm:text-xl bg-purple2 rounded-md p-3 lg:p-3 lg:px-5 uppercase RDV"
             >
               Prendre un rendez-vous
             </Link>
