@@ -58,7 +58,7 @@ export default function Footer() {
             target="_blank"
             className=" text-sm"
           >
-            Instagram : @inthe_gleamm
+            Instagram : @inthe_gleam
           </Link>
         </div>
       </div>
