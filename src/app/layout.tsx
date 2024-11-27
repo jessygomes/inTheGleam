@@ -19,6 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="52721484-2e96-43ea-a3c3-386377071862"
+        ></script>
+      </head>
       <body className={inter.className}>
         <Analytics />
         <div className="fixed top-0 z-50 w-full flex justify-center">
