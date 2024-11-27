@@ -109,7 +109,7 @@ export default function Ecommerce() {
 
           <div className="flex flex-row justify-between rounded-b-sm px-2 py-1">
             <div className="flex flex-col gap-2">
-              <Link target="_blank" href={"https://www.blockpartyfestival.fr/"}>
+              <Link target="_blank" href={"https://www.bellenippe.fr/"}>
                 <p className="line-clamp-2 text-black font-Gudea uppercase hover:text-purple2">
                   Belle Nippe
                 </p>
