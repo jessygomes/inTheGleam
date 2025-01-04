@@ -1,11 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import RevealEffect from "../../components/RevealEffect/RevealEffect";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "A Propos | inTheGleam",
+  title: "À Propos de Nous | inTheGleam - Experts en Développement Web",
   description:
-    "A Propos de nous : Qui sommes-nous ? Que faisons-nous ? Comment travaillons-nous ?",
+    "Découvrez notre équipe passionnée chez inTheGleam. Développeurs web spécialisés, nous créons des solutions sur-mesure pour transformer vos idées en projets digitaux innovants.",
 };
 
 export default function Propos() {
@@ -17,29 +18,34 @@ export default function Propos() {
         </h3>
 
         <p className="font-Gudea text-m lg:text-lg text-justify lg:mt-10 md:mt-4 md:px-10 lg:px-44 2xl:px-72 mb-2 sm-content-s3">
-          Chez nous,{" "}
+          Chez <span className="font-extrabold text-purple2">inTheGleam</span>,
+          nous mettons un point d'honneur à travailler en interne pour garantir
+          une{" "}
           <span className="font-extrabold text-purple2">
-            tout se déroule en interne
+            collaboration fluide et efficace
           </span>
-          , favorisant une collaboration fluide et efficace. Nous sommes deux
-          frères et{" "}
+          . En tant que deux frères{" "}
           <span className="font-extrabold text-purple2">
-            développeurs web passionnés et créatifs.
+            développeurs web passionnés
+          </span>
+          , nous unissons nos forces et nos spécialités pour concrétiser vos
+          projets avec créativité et expertise.
+          <br />
+          <br />
+          <span className="font-extrabold text-purple2">L'un</span> se concentre
+          sur le Front-End pour créer des interfaces modernes et intuitives,
+          tandis que{" "}
+          <span className="font-extrabold text-purple2">L'autre</span> optimise
+          le Back-End pour assurer la performance et la sécurité de vos
+          solutions web.
+          <br />
+          <br />
+          Ensemble, nous transformons vos idées en solutions web uniques, en
+          offrant une{" "}
+          <span className="font-extrabold text-purple2">
+            expérience immersive
           </span>{" "}
-          Nous travaillons main dans la main pour concrétiser vos projets et
-          chacun de nous possède ses propres spécialités ce qui permet de vous
-          fournir un service complet.
-          <br></br> <br></br> Jessy est orienté Front-End afin de vous apporter
-          la meilleure interface en fonction de vos besoins et de
-          l&apos;expérience utilisateur. Puis, Lenny est orienté Back-End et
-          permet un fonctionnement optimal de votre site web et de sa sécurité.{" "}
-          <br></br> <br></br>
-          Notre but est de transformer vos idées en solutions web remarquables,
-          en offrant
-          <span className="font-extrabold text-purple2">
-            {" "}
-            une expérience immersive pour vous et vos utilisateurs.
-          </span>
+          qui reflète vos ambitions.
         </p>
       </div>
 
@@ -48,9 +54,12 @@ export default function Propos() {
           Création sur-mesure !
         </h1>
 
-        <p className="text-base text-center mt-5 tracking-[.15em] p-2">
-          <span className="text-purple2">Sculptez votre présence</span> en ligne
-          avec des solutions personnalisées.
+        <p className="text-base text-center mt-5 tracking-[.15em] p-2 w-2/3 mx-auto">
+          <span className="text-purple2">
+            Définissez votre présence en ligne
+          </span>{" "}
+          avec des solutions web sur-mesure. Notre expertise nous permet de
+          créer des sites adaptés à vos besoins et à vos ambitions.
         </p>
       </div>
       <RevealEffect>
@@ -60,19 +69,31 @@ export default function Propos() {
               Diagnostic
             </h3>
             <p className="font-Gudea text-m text-justify lg:mt-4 content-section2">
-              Nous débutons chaque projet par une analyse de vos besoins et de
-              vos objectifs. Cette étape nous permet de comprendre votre vision
-              et de concevoir des solutions sur mesure qui répondent
-              parfaitement à vos exigences.
+              Chaque projet commence par un{" "}
+              <span className="font-extrabold text-purple2">
+                diagnostic approfondi
+              </span>{" "}
+              de vos besoins et objectifs. Cette analyse nous permet de
+              comprendre votre vision, de cibler vos priorités et de concevoir
+              des{" "}
+              <span className="font-extrabold text-purple2">
+                solutions personnalisées
+              </span>{" "}
+              parfaitement adaptées à vos attentes.
             </p>
           </div>
 
           <div className="flex flex-col lg:w-1/4">
             <h3 className="font-Gudea font-semibold text-2xl">Créativité</h3>
             <p className="font-Gudea text-m text-justify lg:mt-4 content-section2">
-              Nos compétences graphique et de développement nous permettent de
-              créer des sites web uniques et personnalisés. Chaque détail est
-              soigneusement conçu pour refléter l&apos;identité de votre marque.
+              Grâce à notre expertise en{" "}
+              <span className="font-extrabold text-purple2">
+                design graphique
+              </span>{" "}
+              et en développement, nous concevons des sites web uniques qui
+              reflètent fidèlement l’identité de votre marque. Chaque élément
+              est pensé pour séduire vos visiteurs et renforcer votre image de
+              marque.
             </p>
           </div>
         </div>
@@ -82,10 +103,12 @@ export default function Propos() {
               Flexibilité
             </h3>
             <p className="font-Gudea text-m text-justify lg:mt-4 content-section2">
-              Grâce à notre approche agile, nous sommes en mesure d&apos;adapter
-              et de modifier rapidement les fonctionnalités tout au long du
-              processus de développement. Cette flexibilité garantit que votre
-              site évolue en fonction de vos besoins et des tendances du marché.
+              Avec une approche agile et flexible, nous adaptons et modifions
+              les fonctionnalités de votre site à chaque étape du développement.
+              Cette{" "}
+              <span className="font-extrabold text-purple2">flexibilité</span>{" "}
+              vous assure une solution web évolutive, alignée sur vos besoins et
+              les tendances du marché.
             </p>
           </div>
 
@@ -94,10 +117,14 @@ export default function Propos() {
               Accessibilité
             </h3>
             <p className="font-Gudea text-m text-justify lg:mt-4 content-section2">
-              Nous assurons une compatibilité et une optimisation maximale sur
-              tous les appareils, qu&apos;il s&apos;agisse de smartphones, de
-              tablettes ou d&apos;ordinateurs de bureau. Votre site sera
-              accessible à tous, où que vos visiteurs se trouvent.
+              Nous garantissons une{" "}
+              <span className="font-extrabold text-purple2">
+                accessibilité optimale
+              </span>{" "}
+              et une compatibilité parfaite sur tous les appareils :
+              smartphones, tablettes et ordinateurs. Votre site sera toujours
+              fluide, performant et accessible, quelle que soit la plateforme
+              utilisée par vos visiteurs.
             </p>
           </div>
         </div>

@@ -5,26 +5,39 @@ import HomeSection4 from "@/components/HomeSection4";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "inTheGleam",
+  title: "inTheGleam - Agence Web et Mobile | Développement Sur-Mesure",
   description:
-    "Accueil : inTheGleam - Freelancers - Développement Web & Web Mobile",
+    "inTheGleam, votre agence spécialisée en développement web et mobile. Création de sites vitrines, e-commerce, applications webs, et bien plus. Découvrez nos services et technologies.",
+  openGraph: {
+    title: "inTheGleam - Agence Web et Mobile | Développement Sur-Mesure",
+    description:
+      "inTheGleam, votre agence spécialisée en développement web et mobile. Création de sites vitrines, e-commerce, applications webs, et bien plus. Découvrez nos services et technologies.",
+    url: "https://www.inthegleam.com",
+    type: "website",
+    images: [
+      {
+        url: "https://www.inthegleam.com/images/og-image.jpg",
+        alt: "inTheGleam - Développement Web et Mobile",
+      },
+    ],
+  },
 };
 
 export default function Home() {
   return (
     <main className="">
-      <div aria-label="Accueil" className=" h-[100vh]">
+      <section aria-label="Accueil" className=" h-[100vh]">
         <HomeSection1 />
-      </div>
-      <div aria-label="Nos Services Web">
+      </section>
+      <section aria-label="Nos Services Web">
         <HomeSection2 />
-      </div>
-      <div aria-label="Nos technologies" className=" mt-12 lg:mt-20">
+      </section>
+      <section aria-label="Nos technologies" className=" mt-12 lg:mt-20">
         <HomeSection3 />
-      </div>
-      <div aria-label="Nos avantages" className=" mt-12">
+      </section>
+      <section aria-label="Nos avantages" className=" mt-12">
         <HomeSection4 />
-      </div>
+      </section>
     </main>
   );
 }

@@ -3,9 +3,9 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | inTheGleam",
+  title: "Contactez-nous | inTheGleam - Experts en Développement Web",
   description:
-    "Contactez-nous : Vous avez un projet ? Besoin de conseils ? Réponse en moins de 24 heures !",
+    "Discutez de vos projets avec l'équipe inTheGleam. Bénéficiez de conseils personnalisés et obtenez une réponse rapide sous 24 heures. Transformez vos idées en solutions digitales.",
 };
 
 export default function Contact() {

@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Site E-Commerce | inTheGleam",
+  title: "Création de Site E-Commerce Professionnel | inTheGleam",
   description:
-    "Le site e-commerce : Quels rôles et avantages pour votre entreprise ?",
+    "Boostez votre chiffre d'affaires avec un site e-commerce sur-mesure. Découvrez les avantages d'une boutique en ligne moderne et performante pour étendre votre portée géographique et séduire vos clients.",
 };
 
 export default function Ecommerce() {
@@ -18,12 +18,12 @@ export default function Ecommerce() {
             <span className="font-DissolveRegular">e</span>-commerce
           </h1>
 
-          <p className="hidden sm:block text-lg text-center mt-5 tracking-[.15em]">
-            Presqu&apos;un français sur deux commande sur internet, ce qui
-            permet <br /> aux entreprises d&apos;augmenter le chiffre
-            d&apos;affaires. <br />
-            Le e-Commerce offre la possibilité d&apos;étendre votre zone
-            géographique.
+          <p className="hidden sm:block text-lg text-left mt-5 tracking-[.15em] w-2/3 mx-auto">
+            Aujourd’hui, près d’un Français sur deux effectue des achats en
+            ligne. Le e-commerce est un levier puissant pour augmenter votre
+            chiffre d’affaires et élargir votre zone géographique. <br />{" "}
+            Profitez de cette opportunité pour toucher un public plus large et
+            booster votre croissance.
           </p>
 
           <p className="hide-lg px-2 text-base m-2 text-justify mt-4 tracking-[.15em]">
@@ -47,9 +47,10 @@ export default function Ecommerce() {
               Design
             </h3>
             <p className="font-Gudea text-m lg:text-lg md:text-center lg:text-justify text-justify lg:mt-4 content-section2">
-              Le site e-Commerce doit correspondre à votre image en gardant
-              l&apos;identité visuelle que vous avez établi. Nous pouvons vous
-              aider à la développer afin de vous affirmer sur le marché.
+              Votre site e-commerce doit refléter votre image de marque tout en
+              respectant votre identité visuelle. Nous vous accompagnons dans le
+              développement d’un design unique et professionnel qui vous
+              démarquera sur le marché et renforcera votre crédibilité.
             </p>
           </div>
 
@@ -58,8 +59,11 @@ export default function Ecommerce() {
               Paiement Sécurisé
             </h3>
             <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
-              Solutions de paiement pour assurer le bon fonctionnement et la
-              gestion de votre site.
+              Intégrez des solutions de paiement sécurisées pour garantir une
+              expérience utilisateur fluide et protéger les données sensibles de
+              vos clients. Nous vous proposons des systèmes fiables qui
+              facilitent la gestion de votre site tout en renforçant la
+              confiance de vos utilisateurs.
             </p>
           </div>
         </article>
@@ -70,8 +74,10 @@ export default function Ecommerce() {
               Gestion simple
             </h3>
             <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
-              Mise en place de votre gestion sans connaissances préalables en
-              développement.
+              Simplifiez la gestion de votre boutique en ligne avec des outils
+              intuitifs, accessibles même sans compétences techniques. Prenez
+              facilement le contrôle de votre site e-commerce pour gérer vos
+              produits, commandes et clients en toute autonomie.
             </p>
           </div>
 
@@ -80,14 +86,17 @@ export default function Ecommerce() {
               Multi-langue
             </h3>
             <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
-              Etendre la vente à l&apos;international grâce à la traduction de
-              votre site et donc une chance d&apos;augmenter vos ventes.
+              Ouvrez votre boutique en ligne au marché international grâce à un
+              site multilingue. La traduction professionnelle de votre contenu
+              vous permettra de toucher de nouveaux clients et d’augmenter vos
+              ventes de manière significative.
             </p>
           </div>
         </article>
 
         <p className="font-Gudea font-bold text-purple2 text-xl mb-10 lg:p-0 p-2 md:mt-6 lg:mt-10 uppercase text-center tracking-[.15em]">
-          Votre présence sur le web doit vous servir à générer du contact !
+          Transformez votre présence en ligne en une opportunité pour attirer de
+          nouveaux clients et développer votre activité.
         </p>
       </section>
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
 import RevealEffect from "./RevealEffect/RevealEffect";
@@ -23,7 +24,10 @@ export default function HomeSection2() {
             Gestion de projet web
           </h3>
           <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
-            Site vitrine, site e-commerce, corporate, événementiel
+            Nous vous accompagnons dans la création de vos projets web : sites
+            vitrines, e-commerce, corporate, ou événementiels. De l'idée à la
+            mise en ligne, nous assurons une gestion complète et personnalisée
+            pour garantir votre succès en ligne.
           </p>
         </div>
 
@@ -32,7 +36,10 @@ export default function HomeSection2() {
             Intégration WEB
           </h3>
           <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
-            Intégration HTML / CSS respectueuses des standards du web
+            Nous réalisons des intégrations HTML/CSS respectueuses des standards
+            W3C. Offrez à vos utilisateurs une expérience fluide et optimisée
+            sur tous les navigateurs modernes grâce à un code propre et
+            performant.
           </p>
         </div>
       </article>
@@ -46,8 +53,10 @@ export default function HomeSection2() {
             Web Design
           </h3>
           <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
-            Permettre aux utilisateurs de rentrer dans votre UNIVERS. Répondre
-            au mieux à votre identité visuelle.
+            Créez une expérience immersive pour vos utilisateurs en reflétant
+            votre identité visuelle. Notre web design est conçu pour captiver
+            vos visiteurs, renforcer votre image de marque et améliorer
+            l’engagement.
           </p>
         </div>
 
@@ -59,7 +68,10 @@ export default function HomeSection2() {
             Responsive Design
           </h3>
           <p className="font-Gudea text-m sm:text-center lg:text-left lg:text-lg lg:mt-4 content-section2">
-            Compatible sur tous les supports, tablettes & mobiles
+            Nos designs sont optimisés pour tous les appareils : ordinateurs,
+            tablettes et mobiles. Votre site s'adapte automatiquement pour
+            offrir une expérience utilisateur idéale, quelle que soit la taille
+            de l'écran.
           </p>
         </div>
       </article>
@@ -73,8 +85,10 @@ export default function HomeSection2() {
             Maintenance site internet
           </h3>
           <p className="font-Gudea text-m sm:text-center lg:text-left lg:text-lg lg:mt-4 content-section2">
-            Gérer la maintenance de vos sites web permet d&apos;assurer leur
-            pérennité
+            Assurez la longévité et la sécurité de votre site web grâce à une
+            maintenance régulière. Nous veillons à optimiser les performances,
+            corriger les bugs, et garantir la compatibilité avec les nouvelles
+            technologies.
           </p>
         </div>
 
@@ -86,7 +100,10 @@ export default function HomeSection2() {
             Référencement naturel
           </h3>
           <p className="font-Gudea text-m lg:text-lg lg:mt-4 content-section2">
-            Affichage sémantique des informations pour un référencement optimal
+            Optimisez la visibilité de votre site grâce à un référencement
+            naturel efficace. Nous structurons vos contenus avec des balises
+            sémantiques et des mots-clés stratégiques pour améliorer votre
+            positionnement dans les moteurs de recherche.
           </p>
         </div>
       </article>

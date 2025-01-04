@@ -30,46 +30,46 @@ export default function Footer() {
       </div>
 
       <div className="relative flex flex-col justify-center items-center">
-        <div className="flex gap-4 flex-col lg:flex-row text-white text-center">
+        <div className="flex gap-4 flex-col lg:flex-row text-white text-center ">
           <Link
             href="/"
-            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+            className="text-xs hover:text-[#b080dd] transition-all ease-in-out"
           >
             Accueil
           </Link>
           <Link
             href="/vitrine"
-            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+            className="text-xs hover:text-[#b080dd] transition-all ease-in-out"
           >
             Site Vitrine
           </Link>
           <Link
             href="/e-commerce"
-            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+            className="text-xs hover:text-[#b080dd] transition-all ease-in-out"
           >
             Site E-Commerce
           </Link>
           <Link
             href="/a-propos"
-            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+            className="text-xs hover:text-[#b080dd] transition-all ease-in-out"
           >
             A Propos de nous
           </Link>
           <Link
             href="/contact"
-            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+            className="text-xs hover:text-[#b080dd] transition-all ease-in-out"
           >
             Contact
           </Link>
           <Link
             href="/mentions-legales"
-            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+            className="text-xs hover:text-[#b080dd] transition-all ease-in-out"
           >
             Mentions légales
           </Link>
           <Link
             href="/politique-de-confidentialite"
-            className="text-sm hover:text-[#b080dd] transition-all ease-in-out"
+            className="text-xs hover:text-[#b080dd] transition-all ease-in-out"
           >
             Politique de confidentialité
           </Link>
@@ -78,7 +78,7 @@ export default function Footer() {
         <div className="flex gap-4 flex-col justify-center items-center lg:flex-row text-white text-center pt-5">
           <a
             href="mailto:contact@inthegleam.com"
-            className="flex items-center gap-2 text-sm hover:text-[#b080dd] transition-all ease-in-out"
+            className="flex items-center gap-2 text-xs hover:text-[#b080dd] transition-all ease-in-out"
           >
             <FontAwesomeIcon icon={faEnvelope} size="2x" />
             contact@inthegleam.com
@@ -86,7 +86,7 @@ export default function Footer() {
           <Link
             href="https://www.instagram.com/inthe_gleam/"
             target="_blank"
-            className="flex items-center gap-2 text-sm hover:text-[#b080dd] transition-all ease-in-out"
+            className="flex items-center gap-2 text-xs hover:text-[#b080dd] transition-all ease-in-out"
           >
             <FontAwesomeIcon icon={faInstagram} size="2x" />
             @inthe_gleam
@@ -95,7 +95,7 @@ export default function Footer() {
       </div>
 
       <div className="flex gap-4 text-white relative bottom-0 text-[0.7rem] text-center pt-10 pb-2">
-        <p>2024 inTheGleam &copy; - All rights reserved</p>
+        <p>2025 inTheGleam &copy; - All rights reserved</p>
       </div>
     </footer>
   );

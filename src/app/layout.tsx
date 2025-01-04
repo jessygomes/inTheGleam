@@ -25,6 +25,25 @@ export default function RootLayout({
           src="https://cloud.umami.is/script.js"
           data-website-id="52721484-2e96-43ea-a3c3-386377071862"
         ></script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "inTheGleam",
+              url: "https://www.inthegleam.com",
+              description:
+                "Freelancers spécialisés en développement web et mobile sur mesure.",
+              potentialAction: {
+                "@type": "SearchAction",
+                target:
+                  "https://www.inthegleam.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
       </head>
       <body className={inter.className}>
         <Analytics />
