@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   title: "Création de Site Vitrine Professionnel | inTheGleam",
   description:
     "Valorisez votre entreprise avec un site vitrine sur-mesure. Découvrez les avantages d'une présence en ligne professionnelle pour attirer vos clients et renforcer votre image de marque.",
+  keywords: [
+    "site vitrine",
+    "création site vitrine",
+    "site vitrine professionnel",
+    "développement site vitrine",
+    "présence en ligne professionnelle",
+    "image de marque en ligne",
+    "site sur-mesure entreprise",
+  ],
 };
 
 export default function Vitrine() {
@@ -88,77 +97,98 @@ export default function Vitrine() {
           </div>
         </article>
 
-        <p className="font-Gudea font-bold text-purple2 text-xl mb-10 lg:p-0 p-2 md:mt-8 lg:mt-10 uppercase text-center tracking-[.15em]">
+        <p className="lg:w-2/3 lg:mx-auto font-Gudea font-bold text-purple2 text-base lg:text-xl mb-10 lg:p-0 px-4 md:mt-6 lg:mt-10 uppercase lg:text-center tracking-[.15em]">
           Transformez votre présence en ligne en un outil puissant pour attirer
           vos clients et développer votre activité.
         </p>
       </section>
 
-      <h2 className="lg:p-0 pl-5 pr-5 text-center mb-8 text-2xl lg:text-4xl uppercase mx-auto tracking-[.15em]">
+      <h2 className="p-8 text-center mb-8 text-2xl lg:text-4xl text-white nostech uppercase mx-auto tracking-[.15em]">
         <span className="font-DissolveRegular">R</span>éalisation
       </h2>
 
       <section className="grid md:grid-cols-2 items-center gap-12 mb-16 px-8 md:px-0 lg:w-[60%] mx-auto">
-        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden rounded-sm transition-all md:min-h-fit">
-          <div className="relative h-full w-full overflow-hidden">
+        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden transition-all md:min-h-fit rounded-md">
+          <div className="relative lg:h-[200px] lg:w-[400px] overflow-hidden">
+            <Image
+              src={"/images/nocap.png"}
+              width={500}
+              height={500}
+              alt="Blockparty"
+              className="flex justify-center items-center h-full w-full rounded-md bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+          <div className="flex flex-row justify-between rounded-b-sm px-2 py-1">
+            <div className="flex flex-col gap-2 w-full">
+              <Link target="_blank" href={"https://www.nocapdscvr.com/"}>
+                <p className="line-clamp-2 text-white font-Gudea uppercase bg-blackGleam p-1 text-center hover:bg-purple duration-200 rounded-md">
+                  www.nocapdscvr.com
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden transition-all md:min-h-fit rounded-md">
+          <div className="relative lg:h-[200px] lg:w-[400px] overflow-hidden">
             <Image
               src={"/images/blockparty.png"}
               width={500}
               height={500}
               alt="Blockparty"
-              className="flex justify-center items-center h-full w-full bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
+              className="flex justify-center items-center h-full w-full rounded-md bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
             />
           </div>
           <div className="flex flex-row justify-between rounded-b-sm px-2 py-1">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <Link target="_blank" href={"https://www.blockpartyfestival.fr/"}>
-                <p className="line-clamp-2 text-black font-Gudea uppercase hover:text-purple2">
-                  BlockParty Festival
+                <p className="line-clamp-2 text-white font-Gudea uppercase bg-blackGleam p-1 text-center hover:bg-purple duration-200 rounded-md">
+                  www.blockpartyfestival.fr
                 </p>
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden rounded-sm transition-all md:min-h-fit">
-          <div className="relative h-full w-full overflow-hidden ">
+        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden transition-all md:min-h-fit rounded-md">
+          <div className="relative lg:h-[200px] lg:w-[400px] overflow-hidden">
             <Image
               src={"/images/battement.png"}
               width={500}
               height={500}
-              alt="Blockparty"
-              className="flex justify-center items-center h-full w-full bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
+              alt="faiseur de battement site web"
+              className="flex justify-center items-center h-full w-full rounded-md bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
             />
           </div>
           <div className="flex flex-row justify-between rounded-b-sm px-2 py-1">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <Link
                 target="_blank"
                 href={"https://www.faiseurdebattements.com/"}
               >
-                <p className="line-clamp-2 text-black font-Gudea uppercase hover:text-purple2">
-                  Faiseur de battement
+                <p className="line-clamp-2 text-white font-Gudea uppercase bg-blackGleam p-1 text-center hover:bg-purple duration-200 rounded-md">
+                  www.faiseurdebattements.com
                 </p>
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden rounded-sm transition-all md:min-h-fit">
-          <div className="relative h-full w-full overflow-hidden ">
+        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden transition-all md:min-h-fit rounded-md">
+          <div className="relative lg:h-[200px] lg:w-[400px] overflow-hidden">
             <Image
               src={"/images/flash.png"}
               width={500}
               height={500}
-              alt="Blockparty"
-              className="flex justify-center items-center h-full w-full bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
+              alt="flash"
+              className="flex justify-center items-center h-full w-full rounded-md bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
             />
           </div>
           <div className="flex flex-row justify-between rounded-b-sm px-2 py-1">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <Link target="_blank" href={"https://www.flash-records.fr/"}>
-                <p className="line-clamp-2 text-black font-Gudea uppercase hover:text-purple2">
-                  Flash
+                <p className="line-clamp-2 text-white font-Gudea uppercase bg-blackGleam p-1 text-center hover:bg-purple duration-200 rounded-md">
+                  www.flash-records.fr
                 </p>
               </Link>
             </div>

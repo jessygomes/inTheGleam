@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   title: "inTheGleam - Agence Web et Mobile | Développement Sur-Mesure",
   description:
     "inTheGleam, votre agence spécialisée en développement web et mobile. Création de sites vitrines, e-commerce, applications webs, et bien plus. Découvrez nos services et technologies.",
+  keywords: [
+    "agence web",
+    "développement mobile",
+    "site vitrine",
+    "site e-commerce",
+    "développement sur-mesure",
+    "applications web",
+    "services web professionnels",
+  ],
   openGraph: {
     title: "inTheGleam - Agence Web et Mobile | Développement Sur-Mesure",
     description:

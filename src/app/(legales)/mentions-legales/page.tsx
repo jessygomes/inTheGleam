@@ -1,4 +1,19 @@
-import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mentions Légales et Politique de Confidentialité | inTheGleam",
+  description:
+    "Découvrez les mentions légales et la politique de confidentialité de inTheGleam. Nous protégeons vos données personnelles et respectons les obligations légales en vigueur.",
+  keywords: [
+    "mentions légales",
+    "politique de confidentialité",
+    "protection des données",
+    "obligations légales site web",
+    "respect vie privée",
+    "confidentialité des données",
+    "inTheGleam RGPD",
+  ],
+};
 
 export default function page() {
   return (

@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   title: "Contactez-nous | inTheGleam - Experts en Développement Web",
   description:
     "Discutez de vos projets avec l'équipe inTheGleam. Bénéficiez de conseils personnalisés et obtenez une réponse rapide sous 24 heures. Transformez vos idées en solutions digitales.",
+  keywords: [
+    "contact inTheGleam",
+    "agence développement web",
+    "experts web et mobile",
+    "demander un devis web",
+    "contact agence web",
+    "développement web sur-mesure",
+    "inTheGleam contact",
+  ],
 };
 
 export default function Contact() {

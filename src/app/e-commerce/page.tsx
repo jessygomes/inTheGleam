@@ -6,6 +6,30 @@ export const metadata: Metadata = {
   title: "Création de Site E-Commerce Professionnel | inTheGleam",
   description:
     "Boostez votre chiffre d'affaires avec un site e-commerce sur-mesure. Découvrez les avantages d'une boutique en ligne moderne et performante pour étendre votre portée géographique et séduire vos clients.",
+  keywords: [
+    "site e-commerce",
+    "création boutique en ligne",
+    "développement e-commerce",
+    "site de vente en ligne",
+    "solutions e-commerce sur-mesure",
+    "agence e-commerce",
+    "inTheGleam e-commerce",
+  ],
+  openGraph: {
+    title: "Création de Site E-Commerce Professionnel | inTheGleam",
+    description:
+      "Boostez votre chiffre d'affaires avec un site e-commerce sur-mesure. Découvrez les avantages d'une boutique en ligne moderne et performante pour étendre votre portée géographique et séduire vos clients.",
+    url: "https://www.inthegleam.com/ecommerce",
+    type: "website",
+    images: [
+      {
+        url: "https://www.inthegleam.com/images/ecommerce-og-image.jpg",
+        alt: "Création de Site E-Commerce Professionnel - inTheGleam",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function Ecommerce() {
@@ -94,33 +118,55 @@ export default function Ecommerce() {
           </div>
         </article>
 
-        <p className="font-Gudea font-bold text-purple2 text-xl mb-10 lg:p-0 p-2 md:mt-6 lg:mt-10 uppercase text-center tracking-[.15em]">
+        <p className="lg:w-2/3 lg:mx-auto font-Gudea font-bold text-purple2 text-base lg:text-xl mb-10 lg:p-0 px-4 md:mt-6 lg:mt-10 uppercase lg:text-center tracking-[.15em]">
           Transformez votre présence en ligne en une opportunité pour attirer de
           nouveaux clients et développer votre activité.
         </p>
       </section>
 
-      <h2 className="lg:p-0 pl-5 pr-5 text-center mb-8 text-2xl lg:text-4xl uppercase mx-auto tracking-[.15em]">
+      <h2 className="p-8 text-center mb-8 text-2xl lg:text-4xl text-white nostech uppercase mx-auto tracking-[.15em]">
         <span className="font-DissolveRegular">R</span>éalisation
       </h2>
 
-      <section className="grid md:grid-cols-2 items-center gap-12 mb-16 px-8 md:px-0 lg:w-[60%] mx-auto">
-        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden rounded-sm transition-all md:min-h-fit">
-          <div className="relative h-full w-full overflow-hidden">
+      <section className="grid md:grid-cols-2 items-center justify-center gap-12 mb-16 px-8 md:px-0 lg:w-[60%] mx-auto">
+        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden transition-all md:min-h-fit rounded-md">
+          <div className="relative lg:h-[200px] lg:w-[400px] overflow-hidden">
             <Image
               src={"/images/bellenippe.png"}
               width={500}
               height={500}
               alt="Belle Nippe"
-              className="flex justify-center items-center h-full w-full bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
+              className="flex justify-center items-center h-full w-full rounded-md bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
             />
           </div>
 
           <div className="flex flex-row justify-between rounded-b-sm px-2 py-1">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 w-full">
               <Link target="_blank" href={"https://www.bellenippe.fr/"}>
-                <p className="line-clamp-2 text-black font-Gudea uppercase hover:text-purple2">
-                  Belle Nippe
+                <p className="line-clamp-2 text-white font-Gudea uppercase bg-blackGleam p-1 text-center hover:bg-purple duration-200 rounded-md">
+                  www.bellenippe.fr
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden transition-all md:min-h-fit rounded-md">
+          <div className="relative lg:h-[200px] lg:w-[400px] overflow-hidden">
+            <Image
+              src={"/images/phonedumonde.png"}
+              width={500}
+              height={500}
+              alt="Belle Nippe"
+              className="flex justify-center items-center h-full w-full rounded-md bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+
+          <div className="flex flex-row justify-between rounded-b-sm px-2 py-1 w-full">
+            <div className="flex flex-col gap-2 w-full">
+              <Link target="_blank" href={"https://www.telephonedumonde.com/"}>
+                <p className="w-full line-clamp-2 text-white font-Gudea uppercase bg-blackGleam p-1 text-center hover:bg-purple duration-200 rounded-md">
+                  www.telephonedumonde.com
                 </p>
               </Link>
             </div>

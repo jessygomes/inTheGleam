@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   title: "À Propos de Nous | inTheGleam - Experts en Développement Web",
   description:
     "Découvrez notre équipe passionnée chez inTheGleam. Développeurs web spécialisés, nous créons des solutions sur-mesure pour transformer vos idées en projets digitaux innovants.",
+  keywords: [
+    "inTheGleam",
+    "à propos inTheGleam",
+    "agence développement web",
+    "équipe de développeurs web",
+    "développement web sur-mesure",
+    "création projets digitaux",
+    "experts web et mobile",
+  ],
 };
 
 export default function Propos() {

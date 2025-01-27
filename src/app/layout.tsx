@@ -44,6 +44,23 @@ export default function RootLayout({
             }),
           }}
         />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "inTheGleam",
+            url: "https://www.inthegleam.com",
+            logo: "https://www.inthegleam.com/public/logos/LogoPNG_inTheGleam_Black.png",
+            sameAs: ["https://www.linkedin.com/company/inthegleam"],
+            contactPoint: [
+              {
+                "@type": "ContactPoint",
+                // telephone: "+123456789",
+                contactType: "customer service",
+              },
+            ],
+          })}
+        </script>
       </head>
       <body className={inter.className}>
         <Analytics />
