@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         purple: "#3D0571",
         purple2: "#4f0694",
+        purple3: "#6a1b9a",
         blackGleam: "#080808",
       },
       backgroundImage: {

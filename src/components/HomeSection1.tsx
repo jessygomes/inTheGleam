@@ -38,7 +38,7 @@ export default function HomeSection1() {
           <button className="tracking-[.25em] lg:mt-4 lg:tracking-[.55em] mt-1 z-50">
             <Link
               href="/contact"
-              className="font-Gudea font-semibold text-xs sm:text-xl bg-purple2 rounded-md p-3 lg:p-3 lg:px-5 uppercase RDV"
+              className="font-Gudea font-semibold text-xs sm:text-xl bg-gradient-to-l from-purple2 to-purple3 rounded-md p-3 lg:p-3 lg:px-5 uppercase RDV"
             >
               Prendre un rendez-vous
             </Link>

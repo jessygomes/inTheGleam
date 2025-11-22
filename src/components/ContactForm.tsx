@@ -29,139 +29,171 @@ export default function ContactForm() {
         }
       );
   };
+
   return (
     <div>
       <form
         action="submit"
         ref={form}
         onSubmit={sendEmail}
-        className="font-Gudea max-w-md mx-auto mt-5 p-7 lg:p-0 mb-10"
+        className="font-Gudea space-y-6"
       >
-        <div className="grid md:grid-cols-2 md:gap-6">
-          <div className="relative z-0 w-full mb-5 group">
+        {/* Nom et Prénom */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="group">
+            <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+              Nom *
+            </label>
             <input
               type="text"
               name="name"
-              id="floating_first_name"
-              className="caret-violet-700 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple2 peer"
-              placeholder=" "
+              id="name"
               required
+              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple2 focus:border-transparent transition-all duration-300 hover:bg-white group-hover:shadow-md"
+              placeholder="Votre nom"
             />
-            <label
-              htmlFor="floating_first_name"
-              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-purple2 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >
-              Nom
-            </label>
           </div>
-          <div className="relative z-0 w-full mb-5 group">
+          <div className="group">
+            <label htmlFor="last_name" className="block text-sm font-semibold text-gray-700 mb-2">
+              Prénom *
+            </label>
             <input
               type="text"
               name="last_name"
-              id="floating_last_name"
-              className="caret-violet-700 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple2 peer"
-              placeholder=" "
+              id="last_name"
               required
+              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple2 focus:border-transparent transition-all duration-300 hover:bg-white group-hover:shadow-md"
+              placeholder="Votre prénom"
             />
-            <label
-              htmlFor="floating_last_name"
-              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-purple2 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-            >
-              Prénom
-            </label>
           </div>
         </div>
-        <div className="relative z-0 w-full mb-5 group">
-          <input
-            type="email"
-            name="email"
-            id="floating_email"
-            className="caret-violet-700 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple2 peer"
-            placeholder=" "
-            required
-          />
-          <label
-            htmlFor="floating_email"
-            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-purple2 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >
-            Adresse Email
-          </label>
-        </div>
-        <div className="relative z-0 w-full mb-5 group">
-          <input
-            type="number"
-            name="tel"
-            id="floating_tel"
-            className="caret-violet-700 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple2 peer"
-            placeholder=" "
-            required
-          />
-          <label
-            htmlFor="floating_tel"
-            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-purple2 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >
-            Tel
-          </label>
-        </div>
-        <div className="relative z-0 w-full mb-5 group">
-          <input
-            name="societe1"
-            id="societe"
-            className="caret-violet-700 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple2 peer"
-            placeholder=" "
-            required
-          />
-          <label
-            htmlFor="societe"
-            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-purple2 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >
-            Société
-          </label>
+
+        {/* Email et Téléphone */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="group">
+            <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+              Email *
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple2 focus:border-transparent transition-all duration-300 hover:bg-white group-hover:shadow-md"
+              placeholder="votre@email.com"
+            />
+          </div>
+          <div className="group">
+            <label htmlFor="tel" className="block text-sm font-semibold text-gray-700 mb-2">
+              Téléphone *
+            </label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              required
+              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple2 focus:border-transparent transition-all duration-300 hover:bg-white group-hover:shadow-md"
+              placeholder="06 12 34 56 78"
+            />
+          </div>
         </div>
 
-        <div className="relative z-0 w-full mb-5 group">
-          <input
-            type="number"
-            name="budget"
-            id="budget"
-            className="caret-violet-700 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple2 peer"
-            placeholder=" "
-            required
-          />
-          <label
-            htmlFor="budget"
-            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-purple2 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >
-            Budget
-          </label>
+        {/* Société et Budget */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="group">
+            <label htmlFor="societe1" className="block text-sm font-semibold text-gray-700 mb-2">
+              Société
+            </label>
+            <input
+              type="text"
+              name="societe1"
+              id="societe1"
+              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple2 focus:border-transparent transition-all duration-300 hover:bg-white group-hover:shadow-md"
+              placeholder="Nom de votre entreprise"
+            />
+          </div>
+          <div className="group">
+            <label htmlFor="budget" className="block text-sm font-semibold text-gray-700 mb-2">
+              Budget estimé (€)
+            </label>
+            <select
+              name="budget"
+              id="budget"
+              className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple2 focus:border-transparent transition-all duration-300 hover:bg-white group-hover:shadow-md"
+            >
+              <option value="">Sélectionnez votre budget</option>
+              <option value="1000-3000">1 000€ - 3 000€</option>
+              <option value="3000-5000">3 000€ - 5 000€</option>
+              <option value="5000-10000">5 000€ - 10 000€</option>
+              <option value="10000+">10 000€ et plus</option>
+              <option value="a-definir">À définir ensemble</option>
+            </select>
+          </div>
         </div>
 
-        <label
-          htmlFor="message"
-          className="caret-violet-700 block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-        >
-          Votre message
-        </label>
-        <textarea
-          name="mess"
-          id="message"
-          rows={5}
-          className="caret-violet-700 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple2 peer"
-          placeholder="Envoyez votre demande..."
-        ></textarea>
+        {/* Type de projet */}
+        <div className="group">
+          <label htmlFor="projet-type" className="block text-sm font-semibold text-gray-700 mb-2">
+            Type de projet
+          </label>
+          <select
+            name="projet_type"
+            id="projet-type"
+            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple2 focus:border-transparent transition-all duration-300 hover:bg-white group-hover:shadow-md"
+          >
+            <option value="">Quel est votre projet ?</option>
+            <option value="site-vitrine">Site vitrine</option>
+            <option value="e-commerce">Site e-commerce</option>
+            <option value="application-web">Application web</option>
+            <option value="refonte">Refonte de site existant</option>
+            <option value="maintenance">Maintenance / Support</option>
+            <option value="autre">Autre projet</option>
+          </select>
+        </div>
 
-        <div className="font-Gudea flex flex-col justify-center mt-4">
+        {/* Message */}
+        <div className="group">
+          <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+            Décrivez votre projet *
+          </label>
+          <textarea
+            name="mess"
+            id="message"
+            rows={6}
+            required
+            className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple2 focus:border-transparent transition-all duration-300 hover:bg-white group-hover:shadow-md resize-none"
+            placeholder="Parlez-nous de votre projet, vos objectifs, vos contraintes..."
+          ></textarea>
+        </div>
+
+        {/* Bouton et message de succès */}
+        <div className="space-y-4">
           <button
             type="submit"
-            className="text-white bg-purple2 p-2 pl-5 pr-5 uppercase rounded-lg font-bold border border-purple 2 hover:bg-white hover:text-black hover:border-purple2 transition duration-500"
+            className="w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-bold py-4 px-8 rounded-2xl hover:from-purple3 hover:to-purple2 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple2 focus:ring-offset-2"
           >
-            Envoyer
+            <span className="flex items-center justify-center">
+              Envoyer ma demande
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
+            </span>
           </button>
+
           <p
             id="success"
-            className="hidden text-center text-white bg-green-500 p-2 mt-2 tracking-widest font-bold uppercase"
+            className="hidden text-center bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-2xl font-semibold"
           >
-            Message envoyé avec succès !
+            <span className="flex items-center justify-center">
+              <svg className="mr-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+              Message envoyé avec succès ! Nous vous répondrons sous 24h.
+            </span>
+          </p>
+
+          <p className="text-center text-sm text-gray-500">
+            * Champs obligatoires - Vos données sont protégées et ne seront jamais partagées
           </p>
         </div>
       </form>

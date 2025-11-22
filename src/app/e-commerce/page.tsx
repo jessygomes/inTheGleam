@@ -35,141 +35,399 @@ export const metadata: Metadata = {
 export default function Ecommerce() {
   return (
     <>
-      <section className="mt-[8rem] lg:mt-[12rem]">
-        <article className="font-Gudea flex flex-col text-blackGleam">
-          <h1 className="lg:p-0 pl-5 pr-5 text-center text-2xl lg:text-4xl font-bold uppercase mx-auto tracking-[.15em]">
-            Création de <span className="font-DissolveRegular">s</span>ite{" "}
-            <span className="font-DissolveRegular">e</span>-commerce
-          </h1>
+      {/* Hero Section avec gradient moderne */}
+      <section className="relative min-h-screen bg-white pt-52 pb-16 overflow-hidden">
+        {/* Éléments décoratifs */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple2 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl"></div>
+        </div>
 
-          <p className="hidden sm:block text-lg text-left mt-5 tracking-[.15em] w-2/3 mx-auto">
-            Aujourd’hui, près d’un Français sur deux effectue des achats en
-            ligne. Le e-commerce est un levier puissant pour augmenter votre
-            chiffre d’affaires et élargir votre zone géographique. <br />{" "}
-            Profitez de cette opportunité pour toucher un public plus large et
-            booster votre croissance.
-          </p>
+        <div className="relative container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-6xl lg:text-5xl font-bold text-blackGleam mb-8 tracking-wide">
+              E-commerce Sur Mesure
+            </h1>
 
-          <p className="hide-lg px-2 text-base m-2 text-justify mt-4 tracking-[.15em]">
-            <span className="text-purple2">
-              Presqu&apos;un français sur deux
-            </span>{" "}
-            commande sur internet, ce qui permet aux entreprises{" "}
-            <span className="text-purple2">
-              d&apos;augmenter le chiffre d&apos;affaires.{" "}
-            </span>
-            Le e-Commerce offre la possibilité{" "}
-            <span className="text-purple2">
-              d&apos;étendre votre zone géographique.
-            </span>
-          </p>
-        </article>
-
-        <article className="type-site flex flex-wrap justify-center md:text-center lg:text-left md:px-6 px-4 lg:p-2 mt-8 lg:mt-8 md:gap-6 lg:gap-36 bloc-section2">
-          <div className="flex flex-col lg:w-1/4">
-            <h3 className="font-Gudea font-semibold lg:text-purple2 sm-text-purple text-2xl">
-              Design
-            </h3>
-            <p className="font-Gudea text-m lg:text-lg md:text-center lg:text-justify text-justify lg:mt-4 content-section2">
-              Votre site e-commerce doit refléter votre image de marque tout en
-              respectant votre identité visuelle. Nous vous accompagnons dans le
-              développement d’un design unique et professionnel qui vous
-              démarquera sur le marché et renforcera votre crédibilité.
+            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+              Transformez votre activité avec une{" "}
+              <span className="text-purple2 font-semibold">
+                boutique en ligne professionnelle
+              </span>
+              . Près d&apos;un Français sur deux achète en ligne - saisissez
+              cette opportunité !
             </p>
-          </div>
 
-          <div className="flex flex-col lg:w-1/4">
-            <h3 className="font-Gudea font-semibold text-2xl">
-              Paiement Sécurisé
-            </h3>
-            <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
-              Intégrez des solutions de paiement sécurisées pour garantir une
-              expérience utilisateur fluide et protéger les données sensibles de
-              vos clients. Nous vous proposons des systèmes fiables qui
-              facilitent la gestion de votre site tout en renforçant la
-              confiance de vos utilisateurs.
-            </p>
-          </div>
-        </article>
-
-        <article className="type-site flex flex-wrap justify-center md:text-center lg:text-left md:px-6 md:mt-5 px-4 lg:p-2 lg:mt-8 md:gap-6 lg:gap-36 bloc-section2">
-          <div className="flex flex-col lg:w-1/4">
-            <h3 className="font-Gudea font-semibold  sm-text-purple text-2xl">
-              Gestion simple
-            </h3>
-            <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
-              Simplifiez la gestion de votre boutique en ligne avec des outils
-              intuitifs, accessibles même sans compétences techniques. Prenez
-              facilement le contrôle de votre site e-commerce pour gérer vos
-              produits, commandes et clients en toute autonomie.
-            </p>
-          </div>
-
-          <div className="flex flex-col lg:w-1/4">
-            <h3 className="font-Gudea font-semibold lg:text-purple2 text-2xl">
-              Multi-langue
-            </h3>
-            <p className="font-Gudea text-m lg:text-lg text-justify md:text-center lg:text-justify lg:mt-4 content-section2">
-              Ouvrez votre boutique en ligne au marché international grâce à un
-              site multilingue. La traduction professionnelle de votre contenu
-              vous permettra de toucher de nouveaux clients et d’augmenter vos
-              ventes de manière significative.
-            </p>
-          </div>
-        </article>
-
-        <p className="lg:w-2/3 lg:mx-auto font-Gudea font-bold text-purple2 text-base lg:text-xl mb-10 lg:p-0 px-4 md:mt-6 lg:mt-10 uppercase lg:text-center tracking-[.15em]">
-          Transformez votre présence en ligne en une opportunité pour attirer de
-          nouveaux clients et développer votre activité.
-        </p>
-      </section>
-
-      <h2 className="p-8 text-center mb-8 text-2xl lg:text-4xl text-white nostech uppercase mx-auto tracking-[.15em]">
-        <span className="font-DissolveRegular">R</span>éalisation
-      </h2>
-
-      <section className="grid md:grid-cols-2 items-center justify-center gap-12 mb-16 px-8 md:px-0 lg:w-[60%] mx-auto">
-        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden transition-all md:min-h-fit rounded-md">
-          <div className="relative lg:h-[200px] lg:w-[400px] overflow-hidden">
-            <Image
-              src={"/images/bellenippe.png"}
-              width={500}
-              height={500}
-              alt="Belle Nippe"
-              className="flex justify-center items-center h-full w-full rounded-md bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
-            />
-          </div>
-
-          <div className="flex flex-row justify-between rounded-b-sm px-2 py-1">
-            <div className="flex flex-col gap-2 w-full">
-              <Link target="_blank" href={"https://www.bellenippe.fr/"}>
-                <p className="line-clamp-2 text-white font-Gudea uppercase bg-blackGleam p-1 text-center hover:bg-purple duration-200 rounded-md">
-                  www.bellenippe.fr
-                </p>
-              </Link>
+            <div className="grid md:grid-cols-3 gap-8 mt-16 text-center">
+              <div className="bg-blackGleam/10 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20 hover:bg-purple2/20 transition-all duration-300">
+                <div className="text-3xl font-bold text-purple2 mb-2">
+                  +150%
+                </div>
+                <div className="text-blackGleam  text-sm">
+                  Augmentation moyenne des ventes
+                </div>
+              </div>
+              <div className="bg-blackGleam/10 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20 hover:bg-purple2/20 transition-all duration-300">
+                <div className="text-3xl font-bold text-purple2 mb-2">24/7</div>
+                <div className="text-blackGleam text-sm">
+                  Ventes automatisées
+                </div>
+              </div>
+              <div className="bg-blackGleam/10 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20 hover:bg-purple2/20 transition-all duration-300">
+                <div className="text-3xl font-bold text-purple2 mb-2">∞</div>
+                <div className="text-blackGleam text-sm">
+                  Portée géographique
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="group relative flex min-h-fit w-full max-w-fit flex-col gap-1 overflow-hidden transition-all md:min-h-fit rounded-md">
-          <div className="relative lg:h-[200px] lg:w-[400px] overflow-hidden">
-            <Image
-              src={"/images/phonedumonde.png"}
-              width={500}
-              height={500}
-              alt="Belle Nippe"
-              className="flex justify-center items-center h-full w-full rounded-md bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110"
+        {/* Flèche pour scroll */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <svg
+            className="w-6 h-6 text-blackGleam"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
             />
+          </svg>
+        </div>
+      </section>
+
+      {/* Section fonctionnalités modernisée */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-blackGleam mb-6 tracking-wide">
+              Fonctionnalités <span className="text-purple2">Avancées</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Chaque boutique en ligne que nous créons est équipée des dernières
+              technologies pour maximiser vos conversions
+            </p>
           </div>
 
-          <div className="flex flex-row justify-between rounded-b-sm px-2 py-1 w-full">
-            <div className="flex flex-col gap-2 w-full">
-              <Link target="_blank" href={"https://www.telephonedumonde.com/"}>
-                <p className="w-full line-clamp-2 text-white font-Gudea uppercase bg-blackGleam p-1 text-center hover:bg-purple duration-200 rounded-md">
-                  www.telephonedumonde.com
-                </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            {/* Design */}
+            <div className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-purple2/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple2 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v6a2 2 0 002 2h4a2 2 0 002-2V5z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-blackGleam mb-4 font-Gudea">
+                Design Unique
+              </h3>
+              <p className="text-gray-600 leading-relaxed font-Gudea">
+                Interface sur mesure qui reflète votre identité de marque et
+                optimise l&apos;expérience utilisateur pour maximiser les
+                conversions.
+              </p>
+            </div>
+
+            {/* Paiement Sécurisé */}
+            <div className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-purple2/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-blackGleam mb-4 font-Gudea">
+                Paiement Sécurisé
+              </h3>
+              <p className="text-gray-600 leading-relaxed font-Gudea">
+                Intégration des meilleures solutions de paiement (Stripe,
+                PayPal, CB) avec chiffrement SSL et conformité PCI DSS.
+              </p>
+            </div>
+
+            {/* Gestion Simple */}
+            <div className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-purple2/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-blackGleam mb-4 font-Gudea">
+                Gestion Intuitive
+              </h3>
+              <p className="text-gray-600 leading-relaxed font-Gudea">
+                Dashboard admin simple et puissant pour gérer produits,
+                commandes, clients et statistiques en temps réel.
+              </p>
+            </div>
+
+            {/* Multi-langue */}
+            <div className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-purple2/20">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-blackGleam mb-4 font-Gudea">
+                International
+              </h3>
+              <p className="text-gray-600 leading-relaxed font-Gudea">
+                Support multi-langues et multi-devises pour conquérir les
+                marchés internationaux et multiplier votre clientèle.
+              </p>
+            </div>
+          </div>
+
+          {/* Call to action modernisé */}
+          <div className="text-center mt-16">
+            <div className="bg-gradient-to-r from-purple3 to-purple2 rounded-3xl p-12 max-w-4xl mx-auto">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-Gudea">
+                Prêt à révolutionner vos ventes en ligne ?
+              </h3>
+              <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-Gudea leading-relaxed">
+                Rejoignez nos clients qui ont multiplié leur chiffre
+                d&apos;affaires grâce à leur boutique e-commerce sur mesure.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center bg-white text-blackGleam font-bold py-4 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg font-Gudea"
+              >
+                Lancer mon projet e-commerce
+                <svg
+                  className="ml-3 w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
+                </svg>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section réalisations modernisée */}
+      <section className="py-20 bg-blackGleam/10">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-blackGleam mb-4 uppercase tracking-[.15em] font-Gudea">
+              Nos <span className="font-DissolveRegular text-purple2">R</span>
+              éalisations E-commerce
+            </h2>
+            <p className="text-lg text-blackGleam max-w-2xl mx-auto font-Gudea">
+              Découvrez nos boutiques en ligne sur mesure, conçues pour
+              maximiser vos ventes et offrir une expérience client
+              exceptionnelle.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Belle Nippe */}
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+              <div className="relative overflow-hidden">
+                <Image
+                  src={"/images/bellenippe.png"}
+                  width={600}
+                  height={400}
+                  alt="Belle Nippe - Boutique de mode en ligne"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+                  Belle Nippe
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                  Boutique de mode en ligne élégante avec gestion des stocks en
+                  temps réel, système de paiement sécurisé et interface
+                  utilisateur intuitive.
+                </p>
+
+                <Link
+                  target="_blank"
+                  href={"https://www.bellenippe.fr/"}
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                >
+                  <span>Visiter le site</span>
+                  <svg
+                    className="ml-2 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Téléphone du Monde */}
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+              <div className="relative overflow-hidden">
+                <Image
+                  src={"/images/phonedumonde.png"}
+                  width={600}
+                  height={400}
+                  alt="Téléphone du Monde - Boutique de téléphonie"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+                  Téléphone du Monde
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                  Plateforme e-commerce spécialisée dans la vente de smartphones
+                  et accessoires, avec système de comparaison avancé et support
+                  client intégré.
+                </p>
+
+                <Link
+                  target="_blank"
+                  href={"https://www.telephonedumonde.com/"}
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                >
+                  <span>Visiter le site</span>
+                  <svg
+                    className="ml-2 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Section statistiques modernisée */}
+          <div className="max-w-6xl mx-auto mt-16 bg-gradient-to-r from-purple2 to-purple3 rounded-3xl p-8 text-white">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+              <div className="transform hover:scale-105 transition-transform duration-300">
+                <div className="text-3xl font-bold text-white mb-2 font-Gudea">
+                  99.9%
+                </div>
+                <div className="text-sm opacity-90 font-Gudea">
+                  Uptime garanti
+                </div>
+              </div>
+              <div className="transform hover:scale-105 transition-transform duration-300">
+                <div className="text-3xl font-bold text-white mb-2 font-Gudea">
+                  &lt;2s
+                </div>
+                <div className="text-sm opacity-90 font-Gudea">
+                  Temps de chargement
+                </div>
+              </div>
+              <div className="transform hover:scale-105 transition-transform duration-300">
+                <div className="text-3xl font-bold text-white mb-2 font-Gudea">
+                  24/7
+                </div>
+                <div className="text-sm opacity-90 font-Gudea">
+                  Support technique
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to action final */}
+          <div className="text-center mt-12">
+            <h3 className="text-2xl font-bold text-blackGleam mb-4 font-Gudea">
+              Prêt à lancer votre boutique en ligne ?
+            </h3>
+            <p className="text-blackGleam mb-6 max-w-2xl mx-auto font-Gudea">
+              Contactez-nous pour discuter de votre projet e-commerce et
+              découvrir comment nous pouvons vous aider à réussir en ligne.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center bg-gradient-to-l from-purple3 to-purple2 text-white font-semibold py-4 px-8 rounded-lg hover:bg-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+            >
+              Démarrer mon projet
+              <svg
+                className="ml-2 w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

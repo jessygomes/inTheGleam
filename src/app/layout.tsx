@@ -5,12 +5,20 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { defaultMetadata } from "@/lib/seo-config";
+import {
+  organizationSchema,
+  websiteSchema,
+  serviceSchema,
+} from "@/lib/structured-data";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "inTheGleam",
-  description: "Freelancers : Développement Web",
+  ...defaultMetadata,
+  verification: {
+    google: "google-site-verification-code", // À remplacer par votre code Google
+  },
 };
 
 export default function RootLayout({
