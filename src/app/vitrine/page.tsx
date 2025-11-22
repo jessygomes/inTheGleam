@@ -278,8 +278,9 @@ export default function Vitrine() {
                 </h3>
                 <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
                   Site vitrine artistique moderne présentant les créations et
-                  l'univers de l'artiste. Design épuré et navigation intuitive
-                  pour mettre en valeur le portfolio créatif.
+                  l'univers des soirées NoCap Discover. Design épuré et
+                  navigation intuitive pour mettre en valeur le portfolio
+                  créatif.
                 </p>
 
                 <Link

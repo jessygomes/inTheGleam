@@ -9,8 +9,7 @@ export default function HomeSection2() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16" id="service">
           <h2 className="text-4xl md:text-5xl font-bold text-blackGleam mb-6 tracking-wide font-Gudea">
-            Nos <span className="font-DissolveRegular text-purple2">S</span>
-            ervices
+            Nos <span className="text-purple2">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Des solutions web complètes et sur-mesure pour accompagner votre
