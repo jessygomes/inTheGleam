@@ -210,7 +210,7 @@ export default function HomeSection2() {
             {/* Version desktop/tablette */}
             <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="group text-center">
-                <div className="w-20 h-20 mx-auto mb-6  flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Image
                     className="h-12 w-12"
                     src="/gif/com.gif"
@@ -285,7 +285,7 @@ export default function HomeSection2() {
             {/* Version mobile */}
             <div className="md:hidden grid grid-cols-2 gap-8 max-w-sm mx-auto">
               <div className="group text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple2 to-purple-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Image
                     className="h-10 w-10"
                     src="/gif/com.gif"
@@ -300,7 +300,7 @@ export default function HomeSection2() {
               </div>
 
               <div className="group text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Image
                     className="h-10 w-10"
                     src="/gif/accord.gif"
@@ -315,7 +315,7 @@ export default function HomeSection2() {
               </div>
 
               <div className="group text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Image
                     className="h-10 w-10"
                     src="/gif/conception.gif"
@@ -330,7 +330,7 @@ export default function HomeSection2() {
               </div>
 
               <div className="group text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Image
                     className="h-10 w-10"
                     src="/gif/livraison.gif"
