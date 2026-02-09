@@ -259,6 +259,102 @@ export default function Vitrine() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* LVP Services */}
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+              <div className="relative overflow-hidden">
+                <Image
+                  src={"/images/lvp1.png"}
+                  width={600}
+                  height={400}
+                  alt="LVP Services - Site vitrine"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+                  LVP Services
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                  Site vitrine professionnel pour entreprise de services. Design
+                  épuré et navigation intuitive pour présenter les offres de
+                  manière claire et valoriser l'expertise de l'entreprise.
+                  <br />
+                  Création complète de la charte graphique et du logo pour une
+                  identité visuelle forte et cohérente. (Projet en cours)
+                </p>
+
+                <Link
+                  target="_blank"
+                  href={""}
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                >
+                  <span>Visiter le site</span>
+                  <svg
+                    className="ml-2 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Kit a planter */}
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+              <div className="relative overflow-hidden">
+                <Image
+                  src={"/images/kap_home.png"}
+                  width={600}
+                  height={400}
+                  alt="Kit a planter - Site vitrine"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+                  Kit à planter
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                  Site vitrine présentant les différentes abiances végétales de
+                  KAP ainsi que leurs gammes de pots. Design épuré et navigation
+                  intuitive pour mettre en valeur les produits et l'univers de
+                  la marque.
+                </p>
+
+                <Link
+                  target="_blank"
+                  href={"https://www.kit-a-planter.fr/"}
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                >
+                  <span>Visiter le site</span>
+                  <svg
+                    className="ml-2 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
             {/* NoCap */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="relative overflow-hidden">

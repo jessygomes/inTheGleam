@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -277,6 +278,54 @@ export default function Ecommerce() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* KAP Designer */}
+            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+              <div className="relative overflow-hidden">
+                <Image
+                  src={"/images/kap1.png"}
+                  width={600}
+                  height={400}
+                  alt="Kap Designer - Configurateur de terrasse en ligne"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+                  Kap Designer
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                  Configurateur de terrasse en ligne en 2D pour agencer son
+                  espaces extérieur et passer à la commande de ses pots et
+                  plantes. Design épuré et navigation intuitive pour mettre en
+                  valeur les produits et l'univers de la marque. (Projet en
+                  cours de développement)
+                </p>
+
+                <Link
+                  target="_blank"
+                  href={""}
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                >
+                  <span>Visiter le site</span>
+                  <svg
+                    className="ml-2 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
             {/* Belle Nippe */}
             <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="relative overflow-hidden">
