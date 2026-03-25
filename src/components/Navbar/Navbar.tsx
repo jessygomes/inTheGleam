@@ -31,7 +31,7 @@ const itemNavbar = [
 
 export default function Navbar() {
   const [navActive, setNavActive] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [isScrolledOnHome, setIsScrolledOnHome] = useState(false);
 
   //! BURGER TO CROSS + AFFICHE LA NAVBAR MOBILE
   const [isActive, setIsActive] = useState(false);
@@ -41,25 +41,27 @@ export default function Navbar() {
   };
 
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
+  const scrolled = !isHomePage || isScrolledOnHome;
 
   //! NAVBAR SCROLL
   useEffect(() => {
-    if (pathname === "/") {
-      // vérifie si nous sommes sur la page d'accueil
-      const handleScroll = () => {
-        const isScrolled = window.scrollY > 50;
-        if (isScrolled !== scrolled) {
-          setScrolled(!scrolled);
-        }
-      };
-      window.addEventListener("scroll", handleScroll, { passive: true });
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    } else {
-      setScrolled(true); // active l'arrière-plan pour toutes les autres pages
+    if (!isHomePage) {
+      return;
     }
-  }, [scrolled, pathname]);
+
+    const handleScroll = () => {
+      setIsScrolledOnHome(window.scrollY > 50);
+    };
+
+    // Synchronise l'etat au montage puis sur scroll pour la page d'accueil.
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isHomePage]);
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
