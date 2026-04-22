@@ -20,35 +20,45 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section moderne */}
-      <section className="relative min-h-screen bg-white pt-52 pb-16 overflow-hidden">
+      <section className="relative min-h-screen bg-white pt-36 lg:pt-32 pb-20 overflow-hidden flex flex-col justify-center">
         {/* Éléments décoratifs */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple2 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-purple3 rounded-full blur-3xl"></div>
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple2 rounded-full blur-[120px] opacity-10"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-72 h-72 bg-purple3 rounded-full blur-[100px] opacity-10"></div>
         </div>
 
-        <div className="relative container mx-auto px-4">
+        <div className="relative container mx-auto px-4 z-10">
           <div className="max-w-6xl mx-auto">
             {/* Section titre et description */}
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-6xl lg:text-5xl font-bold text-blackGleam mb-8 tracking-wide font-Gudea">
-                Contactez-<span className="text-purple2">Nous</span>
+              {/* Eyebrow */}
+              <span className="inline-block mb-6 text-xs font-Gudea tracking-[.35em] uppercase text-purple2 border border-purple2/40 rounded-full px-4 py-1.5">
+                inthegleam
+              </span>
+
+              <h1 className="font-semibold text-blackGleam text-center text-3xl sm:text-5xl tracking-[.15em] uppercase mb-6 font-Gudea">
+                <span className="font-DissolveRegular mr-1 text-5xl sm:text-7xl text-blackGleam">
+                  C
+                </span>
+                ontactez-{" "}
+                <span className="bg-gradient-to-r from-purple3 to-purple2 bg-clip-text text-transparent">
+                  Nous
+                </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Vous avez un projet ? Besoin de conseils ?
-                <br />
+              <p className="font-Gudea tracking-wider text-sm sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Vous avez un projet ? Besoin de conseils ?{" "}
                 <span className="text-purple2 font-semibold">
                   Réponse garantie en moins de 24 heures !
                 </span>
               </p>
 
               {/* Statistiques/Avantages rapides */}
-              <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple2 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div className="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto mb-12">
+                <div className="rounded-xl p-5 border border-blackGleam/10 bg-blackGleam/5 hover:border-purple2/40 hover:bg-purple2/5 transition-all duration-300">
+                  <div className="w-10 h-10 bg-gradient-to-br from-purple2 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-5 h-5 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -61,18 +71,18 @@ export default function Contact() {
                       />
                     </svg>
                   </div>
-                  <h3 className="font-bold text-blackGleam mb-2 font-Gudea">
+                  <h3 className="font-bold text-blackGleam mb-1 font-Gudea text-sm">
                     Réponse Rapide
                   </h3>
-                  <p className="text-gray-600 text-sm font-Gudea">
+                  <p className="text-blackGleam/50 text-xs font-Gudea tracking-wide uppercase">
                     Moins de 24h
                   </p>
                 </div>
 
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="rounded-xl p-5 border border-blackGleam/10 bg-blackGleam/5 hover:border-purple2/40 hover:bg-purple2/5 transition-all duration-300">
+                  <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-5 h-5 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -85,18 +95,18 @@ export default function Contact() {
                       />
                     </svg>
                   </div>
-                  <h3 className="font-bold text-blackGleam mb-2 font-Gudea">
+                  <h3 className="font-bold text-blackGleam mb-1 font-Gudea text-sm">
                     Conseils Gratuits
                   </h3>
-                  <p className="text-gray-600 text-sm font-Gudea">
+                  <p className="text-blackGleam/50 text-xs font-Gudea tracking-wide uppercase">
                     Sans engagement
                   </p>
                 </div>
 
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="rounded-xl p-5 border border-blackGleam/10 bg-blackGleam/5 hover:border-purple2/40 hover:bg-purple2/5 transition-all duration-300">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-5 h-5 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -109,10 +119,10 @@ export default function Contact() {
                       />
                     </svg>
                   </div>
-                  <h3 className="font-bold text-blackGleam mb-2 font-Gudea">
+                  <h3 className="font-bold text-blackGleam mb-1 font-Gudea text-sm">
                     Équipe Dédiée
                   </h3>
-                  <p className="text-gray-600 text-sm font-Gudea">
+                  <p className="text-blackGleam/50 text-xs font-Gudea tracking-wide uppercase">
                     Experts à l&apos;écoute
                   </p>
                 </div>
@@ -293,31 +303,47 @@ export default function Contact() {
                 </div>
 
                 {/* Call to action additionnel */}
-                <div className="bg-gradient-to-r from-gray-900 to-blackGleam rounded-3xl p-8 text-white text-center">
-                  <h3 className="text-xl font-bold mb-4 font-Gudea">
-                    Besoin d&apos;une réponse immédiate ?
-                  </h3>
-                  <p className="text-gray-300 mb-6 font-Gudea">
-                    Consultez notre FAQ ou nos réalisations pour en savoir plus
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    {/* <a
-                      href="/nos-realisations"
-                      className="bg-white text-blackGleam font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-all duration-300 font-Gudea"
-                    >
-                      Nos réalisations
-                    </a> */}
+                <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple3 to-purple2 px-6 py-8">
+                  <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div className="text-left">
+                      <p className="text-xs font-Gudea tracking-[.3em] uppercase text-white/50 mb-1">
+                        En savoir plus ?
+                      </p>
+                      <h3 className="font-semibold text-white text-lg sm:text-2xl tracking-[.1em] uppercase font-Gudea">
+                        Découvrez qui nous sommes
+                      </h3>
+                    </div>
                     <a
                       href="/a-propos"
-                      className="border-2 border-white text-white font-bold py-3 px-6 rounded-xl hover:bg-white hover:text-blackGleam transition-all duration-300 font-Gudea"
+                      className="shrink-0 inline-flex items-center gap-2 font-Gudea font-semibold text-sm bg-white text-purple2 rounded-md py-2.5 px-5 uppercase tracking-[.2em] hover:bg-white/90 transition-all duration-300 hover:scale-105"
                     >
-                      En savoir plus
+                      Notre équipe
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Flèche pour scroll */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <svg
+            className="w-6 h-6 text-blackGleam/40"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
         </div>
       </section>
     </>

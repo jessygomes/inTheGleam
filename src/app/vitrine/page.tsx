@@ -22,45 +22,75 @@ export const metadata: Metadata = {
 export default function Vitrine() {
   return (
     <>
-      {/* Hero Section avec gradient moderne */}
-      <section className="relative min-h-screen bg-white pt-52 pb-16 overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative min-h-screen bg-white pt-36 lg:pt-32 pb-20 overflow-hidden flex flex-col justify-center">
         {/* Éléments décoratifs */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple2 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl"></div>
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-purple2 rounded-full blur-[120px] opacity-10"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-purple3 rounded-full blur-[100px] opacity-10"></div>
         </div>
 
-        <div className="relative container mx-auto px-4 text-center">
+        <div className="relative container mx-auto px-4 text-center z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-5xl font-bold text-blackGleam mb-8 tracking-wide">
-              Sites Vitrine Sur Mesure
+            {/* Eyebrow */}
+            <span className="inline-block mb-6 text-xs font-Gudea tracking-[.35em] uppercase text-purple2 border border-purple2/40 rounded-full px-4 py-1.5">
+              inthegleam
+            </span>
+
+            <h1 className="font-semibold text-blackGleam text-center text-3xl sm:text-5xl tracking-[.15em] uppercase mb-6 font-Gudea">
+              <span className="font-DissolveRegular mr-1 text-5xl sm:text-7xl text-blackGleam">
+                S
+              </span>
+              ites{" "}
+              <span className="bg-gradient-to-r from-purple3 to-purple2 bg-clip-text text-transparent">
+                Vitrine
+              </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Valorisez votre expertise avec un{" "}
-              <span className="text-purple2 font-semibold">
-                site vitrine professionnel
-              </span>
-              . Établissez une connexion authentique avec vos clients et
+            <p className="font-Gudea tracking-wider text-sm sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Valorisez votre expertise avec un site vitrine professionnel.
+              Établissez une connexion authentique avec vos clients et
               renforcez votre crédibilité en ligne.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8 mt-16 text-center">
-              <div className="bg-blackGleam/10 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20 hover:bg-purple2/20 transition-all duration-300">
-                <div className="text-3xl font-bold text-purple2 mb-2">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
+              <Link
+                href="/contact"
+                className="font-Gudea font-semibold text-sm sm:text-base bg-gradient-to-l from-purple2 to-purple3 rounded-md py-3 px-6 uppercase tracking-[.25em] text-white hover:opacity-90 transition-all duration-300 hover:scale-105"
+              >
+                Lancer mon projet
+              </Link>
+              <Link
+                href="#realisations"
+                className="font-Gudea font-semibold text-sm sm:text-base border border-blackGleam/20 rounded-md py-3 px-6 uppercase tracking-[.25em] text-blackGleam/70 hover:border-purple2/60 hover:text-purple2 transition-all duration-300"
+              >
+                Voir nos réalisations
+              </Link>
+            </div>
+
+            {/* Stats */}
+            <div className="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+              <div className="rounded-xl p-5 border border-blackGleam/10 bg-blackGleam/5 hover:border-purple2/40 hover:bg-purple2/5 transition-all duration-300">
+                <div className="text-3xl font-bold text-purple2 mb-1 font-Gudea">
                   +200%
                 </div>
-                <div className="text-blackGleam text-sm">
+                <div className="text-blackGleam/50 text-xs font-Gudea tracking-wide uppercase">
                   Augmentation de la visibilité
                 </div>
               </div>
-              <div className="bg-blackGleam/10 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20 hover:bg-purple2/20 transition-all duration-300">
-                <div className="text-3xl font-bold text-purple2 mb-2">24/7</div>
-                <div className="text-blackGleam text-sm">Présence en ligne</div>
+              <div className="rounded-xl p-5 border border-blackGleam/10 bg-blackGleam/5 hover:border-purple2/40 hover:bg-purple2/5 transition-all duration-300">
+                <div className="text-3xl font-bold text-purple2 mb-1 font-Gudea">
+                  24/7
+                </div>
+                <div className="text-blackGleam/50 text-xs font-Gudea tracking-wide uppercase">
+                  Présence en ligne
+                </div>
               </div>
-              <div className="bg-blackGleam/10 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20 hover:bg-purple2/20 transition-all duration-300">
-                <div className="text-3xl font-bold text-purple2 mb-2">∞</div>
-                <div className="text-blackGleam text-sm">
+              <div className="rounded-xl p-5 border border-blackGleam/10 bg-blackGleam/5 hover:border-purple2/40 hover:bg-purple2/5 transition-all duration-300">
+                <div className="text-3xl font-bold text-purple2 mb-1 font-Gudea">
+                  ∞
+                </div>
+                <div className="text-blackGleam/50 text-xs font-Gudea tracking-wide uppercase">
                   Portée géographique
                 </div>
               </div>
@@ -69,9 +99,9 @@ export default function Vitrine() {
         </div>
 
         {/* Flèche pour scroll */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <svg
-            className="w-6 h-6 text-blackGleam"
+            className="w-6 h-6 text-blackGleam/40"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -210,41 +240,34 @@ export default function Vitrine() {
           </div>
 
           {/* Call to action modernisé */}
-          <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-purple3 to-purple2 rounded-3xl p-12 max-w-4xl mx-auto">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-Gudea">
-                Transformez votre présence en ligne dès aujourd'hui
-              </h3>
-              <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-Gudea leading-relaxed">
-                Rejoignez nos clients qui ont renforcé leur crédibilité et
-                développé leur activité grâce à leur site vitrine professionnel.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center bg-white text-blackGleam font-bold py-4 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg font-Gudea"
-              >
-                Créer mon site vitrine
-                <svg
-                  className="ml-3 w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+          <div className="mt-16 px-28 mx-auto">
+            <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple3 to-purple2 px-6 py-8 text-center">
+              <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="text-left">
+                  <p className="text-xs font-Gudea tracking-[.3em] uppercase text-white/50 mb-1">
+                    Prêt à démarrer ?
+                  </p>
+                  <h3 className="font-semibold text-white text-lg sm:text-2xl tracking-[.1em] uppercase font-Gudea">
+                    Valorisez votre présence en ligne
+                  </h3>
+                </div>
+                <Link
+                  href="/contact"
+                  className="shrink-0 inline-flex items-center gap-2 font-Gudea font-semibold text-sm bg-white text-purple2 rounded-md py-2.5 px-5 uppercase tracking-[.2em] hover:bg-white/90 transition-all duration-300 hover:scale-105"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </Link>
+                  Créer mon site vitrine
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Section réalisations modernisée */}
-      <section className="py-20 bg-blackGleam/10">
+      <section id="realisations" className="py-20 bg-blackGleam/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-blackGleam mb-4 uppercase tracking-[.15em] font-Gudea">
@@ -258,25 +281,25 @@ export default function Vitrine() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
             {/* LVP Services */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
               <div className="relative overflow-hidden">
                 <Image
                   src={"/images/lvp1.png"}
                   width={600}
                   height={400}
                   alt="LVP Services - Site vitrine"
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+              <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-base font-bold text-blackGleam mb-1.5 font-Gudea">
                   LVP Services
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed font-Gudea flex-1">
                   Site vitrine professionnel pour entreprise de services. Design
                   épuré et navigation intuitive pour présenter les offres de
                   manière claire et valoriser l'expertise de l'entreprise.
@@ -288,11 +311,11 @@ export default function Vitrine() {
                 <Link
                   target="_blank"
                   href={""}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
                 >
                   <span>Visiter le site</span>
                   <svg
-                    className="ml-2 w-4 h-4"
+                    className="ml-2 w-3.5 h-3.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -309,23 +332,23 @@ export default function Vitrine() {
             </div>
 
             {/* Kit a planter */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
               <div className="relative overflow-hidden">
                 <Image
                   src={"/images/kap_home.png"}
                   width={600}
                   height={400}
                   alt="Kit a planter - Site vitrine"
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+              <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-base font-bold text-blackGleam mb-1.5 font-Gudea">
                   Kit à planter
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed font-Gudea flex-1">
                   Site vitrine présentant les différentes abiances végétales de
                   KAP ainsi que leurs gammes de pots. Design épuré et navigation
                   intuitive pour mettre en valeur les produits et l'univers de
@@ -335,11 +358,11 @@ export default function Vitrine() {
                 <Link
                   target="_blank"
                   href={"https://www.kit-a-planter.fr/"}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
                 >
                   <span>Visiter le site</span>
                   <svg
-                    className="ml-2 w-4 h-4"
+                    className="ml-2 w-3.5 h-3.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -356,23 +379,23 @@ export default function Vitrine() {
             </div>
 
             {/* NoCap */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
               <div className="relative overflow-hidden">
                 <Image
                   src={"/images/nocap.png"}
                   width={600}
                   height={400}
                   alt="NoCap Discover - Site vitrine artistique"
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+              <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-base font-bold text-blackGleam mb-1.5 font-Gudea">
                   NoCap Discover
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed font-Gudea flex-1">
                   Site vitrine artistique moderne présentant les créations et
                   l'univers des soirées NoCap Discover. Design épuré et
                   navigation intuitive pour mettre en valeur le portfolio
@@ -382,11 +405,11 @@ export default function Vitrine() {
                 <Link
                   target="_blank"
                   href={"https://www.nocapdscvr.com/"}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
                 >
                   <span>Visiter le site</span>
                   <svg
-                    className="ml-2 w-4 h-4"
+                    className="ml-2 w-3.5 h-3.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -403,23 +426,23 @@ export default function Vitrine() {
             </div>
 
             {/* Blockparty */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
               <div className="relative overflow-hidden">
                 <Image
                   src={"/images/blockparty.png"}
                   width={600}
                   height={400}
                   alt="Blockparty Festival - Site vitrine événementiel"
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+              <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-base font-bold text-blackGleam mb-1.5 font-Gudea">
                   Blockparty Festival
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed font-Gudea flex-1">
                   Site vitrine dynamique pour festival de musique électronique.
                   Interface immersive avec animations et design moderne pour
                   captiver l'audience et promouvoir l'événement.
@@ -428,11 +451,11 @@ export default function Vitrine() {
                 <Link
                   target="_blank"
                   href={"https://www.blockpartyfestival.fr/"}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
                 >
                   <span>Visiter le site</span>
                   <svg
-                    className="ml-2 w-4 h-4"
+                    className="ml-2 w-3.5 h-3.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -449,23 +472,23 @@ export default function Vitrine() {
             </div>
 
             {/* Faiseur de Battements */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
               <div className="relative overflow-hidden">
                 <Image
                   src={"/images/battement.png"}
                   width={600}
                   height={400}
                   alt="Faiseur de Battements - Site vitrine musical"
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+              <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-base font-bold text-blackGleam mb-1.5 font-Gudea">
                   Faiseur de Battements
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed font-Gudea flex-1">
                   Site vitrine professionnel pour producteur musical.
                   Présentation élégante du portfolio, intégration de players
                   audio et design optimisé pour l'industrie musicale.
@@ -474,11 +497,11 @@ export default function Vitrine() {
                 <Link
                   target="_blank"
                   href={"https://www.faiseurdebattements.com/"}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
                 >
                   <span>Visiter le site</span>
                   <svg
-                    className="ml-2 w-4 h-4"
+                    className="ml-2 w-3.5 h-3.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -495,23 +518,23 @@ export default function Vitrine() {
             </div>
 
             {/* Flash Records */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
               <div className="relative overflow-hidden">
                 <Image
                   src={"/images/flash.png"}
                   width={600}
                   height={400}
                   alt="Flash Records - Site vitrine label musical"
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+              <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-base font-bold text-blackGleam mb-1.5 font-Gudea">
                   Flash Records
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed font-Gudea flex-1">
                   Site vitrine corporatif pour label de musique. Interface
                   professionnelle mettant en avant les artistes du label avec
                   navigation optimisée et design impactant.
@@ -520,11 +543,11 @@ export default function Vitrine() {
                 <Link
                   target="_blank"
                   href={"https://www.flash-records.fr/"}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
                 >
                   <span>Visiter le site</span>
                   <svg
-                    className="ml-2 w-4 h-4"
+                    className="ml-2 w-3.5 h-3.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

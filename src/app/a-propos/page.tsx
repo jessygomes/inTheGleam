@@ -21,38 +21,43 @@ export const metadata: Metadata = {
 export default function Propos() {
   return (
     <>
-      {/* Hero Section avec gradient moderne */}
-      <section className="relative min-h-screen bg-white pt-52 pb-16 overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative min-h-screen bg-white pt-36 lg:pt-32 pb-20 overflow-hidden flex flex-col justify-center">
         {/* Éléments décoratifs */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple2 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl"></div>
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-purple2 rounded-full blur-[120px] opacity-10"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-purple3 rounded-full blur-[100px] opacity-10"></div>
         </div>
 
-        <div className="relative container mx-auto px-4 text-center">
+        <div className="relative container mx-auto px-4 text-center z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-5xl font-bold text-blackGleam mb-8 tracking-wide">
-              Notre Équipe
+            {/* Eyebrow */}
+            <span className="inline-block mb-6 text-xs font-Gudea tracking-[.35em] uppercase text-purple2 border border-purple2/40 rounded-full px-4 py-1.5">
+              inthegleam
+            </span>
+
+            <h1 className="font-semibold text-blackGleam text-center text-3xl sm:text-5xl tracking-[.15em] uppercase mb-6 font-Gudea">
+              <span className="font-DissolveRegular mr-1 text-5xl sm:text-7xl text-blackGleam">
+                N
+              </span>
+              otre{" "}
+              <span className="bg-gradient-to-r from-purple3 to-purple2 bg-clip-text text-transparent">
+                Équipe
+              </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-4xl mx-auto">
-              Chez{" "}
-              <span className="text-purple2 font-semibold">inTheGleam</span>,
+            <p className="font-Gudea tracking-wider text-sm sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Chez <span className="text-purple2 font-semibold">inTheGleam</span>,
               nous mettons un point d'honneur à travailler en interne pour
               garantir une{" "}
-              <span className="text-purple2 font-semibold">
-                collaboration fluide et efficace
-              </span>
-              .
+              <span className="text-purple2 font-semibold">collaboration fluide et efficace</span>.
             </p>
 
-            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-purple2/20 max-w-5xl mx-auto">
-              <p className="text-lg text-gray-700 leading-relaxed text-left">
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-purple2/20 max-w-5xl mx-auto text-left mb-10">
+              <p className="text-lg text-gray-700 leading-relaxed font-Gudea">
                 En tant que deux frères{" "}
-                <span className="font-semibold text-purple2">
-                  développeurs web passionnés
-                </span>
-                , nous unissons nos forces et nos spécialités pour concrétiser
+                <span className="font-semibold text-purple2">développeurs web passionnés</span>,
+                nous unissons nos forces et nos spécialités pour concrétiser
                 vos projets avec créativité et expertise.
                 <br />
                 <br />
@@ -66,12 +71,17 @@ export default function Propos() {
                 <br />
                 Ensemble, nous transformons vos idées en solutions web uniques,
                 en offrant une{" "}
-                <span className="font-semibold text-purple2">
-                  expérience immersive
-                </span>{" "}
+                <span className="font-semibold text-purple2">expérience immersive</span>{" "}
                 qui reflète vos ambitions.
               </p>
             </div>
+
+            <a
+              href="/contact"
+              className="font-Gudea font-semibold text-sm sm:text-base bg-gradient-to-l from-purple2 to-purple3 rounded-md py-3 px-6 uppercase tracking-[.25em] text-white hover:opacity-90 transition-all duration-300 hover:scale-105"
+            >
+              Parlons de votre projet
+            </a>
           </div>
         </div>
       </section>
@@ -222,34 +232,27 @@ export default function Propos() {
           </RevealEffect>
 
           {/* Call to action modernisé */}
-          <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-purple3 to-purple2 rounded-3xl p-12 max-w-4xl mx-auto">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-Gudea">
-                Prêt à concrétiser vos idées ?
-              </h3>
-              <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-Gudea leading-relaxed">
-                Discutons de votre projet et découvrez comment notre équipe peut
-                transformer vos ambitions en réalité digitale sur-mesure.
-              </p>
-              <a
-                href="/contact"
-                className="inline-flex items-center bg-white text-blackGleam font-bold py-4 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg font-Gudea"
-              >
-                Parlons de votre projet
-                <svg
-                  className="ml-3 w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+          <div className="mt-16 px-28 mx-auto">
+            <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple3 to-purple2 px-6 py-8 text-center">
+              <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="text-left">
+                  <p className="text-xs font-Gudea tracking-[.3em] uppercase text-white/50 mb-1">
+                    Prêt à démarrer ?
+                  </p>
+                  <h3 className="font-semibold text-white text-lg sm:text-2xl tracking-[.1em] uppercase font-Gudea">
+                    Concrétisez vos idées avec nous
+                  </h3>
+                </div>
+                <a
+                  href="/contact"
+                  className="shrink-0 inline-flex items-center gap-2 font-Gudea font-semibold text-sm bg-white text-purple2 rounded-md py-2.5 px-5 uppercase tracking-[.2em] hover:bg-white/90 transition-all duration-300 hover:scale-105"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </a>
+                  Parlons de votre projet
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./Navbar.module.css";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { SparklesCore } from "../ui/vortex";
@@ -20,7 +19,7 @@ const itemNavbar = [
     link: "/vitrine",
   },
   {
-    text: "A Propos",
+    text: "À Propos",
     link: "/a-propos",
   },
   {
@@ -64,8 +63,12 @@ export default function Navbar() {
   }, [isHomePage]);
 
   return (
-    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-      <div className="w-full absolute h-[100%]">
+    <header
+      className={`sticky top-0 z-50 flex w-full items-center justify-around px-32 pt-4 pb-4 transition-all duration-300 ease-in-out max-[800px]:px-8 max-[800px]:pt-4 max-[800px]:pb-8 min-[801px]:justify-start ${
+        scrolled ? "bg-[#080808] backdrop-blur-[10px]" : "bg-transparent"
+      }`}
+    >
+      <div className="pointer-events-none absolute inset-0 h-full w-full">
         <SparklesCore
           id="tsparticlesHeader"
           background="transparent"
@@ -76,56 +79,68 @@ export default function Navbar() {
           particleColor="#FFFFFF"
         />
       </div>
-      <nav className={styles.nav}>
-        <div className="flex justify-center">
-          <Link href="/">
-            <Image
-              className={styles.headerLogo}
-              src="/logos/Logo_icon_inTheGleam_White.png"
-              alt="Logo intTheGleam"
-              width={400}
-              height={400}
-            />
-          </Link>
-        </div>
+      <nav
+        className="relative z-10 flex w-full items-center justify-between text-[aliceblue] min-[801px]:justify-between"
+      >
+        <Link href="/" className="min-[801px]:shrink-0">
+          <Image
+            className="z-[11] mt-4 ml-0 h-10 w-auto drop-shadow-[0_0_2px_#ffffff] transition-all duration-300 ease-in-out max-[800px]:h-10 min-[801px]:mt-0 min-[801px]:mr-8 min-[801px]:h-10"
+            src="/logos/Logo_icon_inTheGleam_White.png"
+            alt="Logo intTheGleam"
+            width={400}
+            height={400}
+          />
+        </Link>
 
         <div
-          className={`${styles.nav__menuBar} ${
-            isActive ? styles.activeBurger : ""
-          }`}
+          className="z-10 mt-4 flex cursor-pointer flex-col items-center justify-center gap-[0.3rem] min-[801px]:hidden"
           onClick={handleClick}
         >
-          <div className={`${styles.line} ${styles.l1}`}></div>
-          <div className={`${styles.line} ${styles.l2}`}></div>
-          <div className={`${styles.line} ${styles.l3}`}></div>
+          <div
+            className={`h-[0.2rem] w-10 rounded-[10rem] bg-white transition-all duration-300 ease-in-out ${
+              isActive ? "translate-y-[10px] rotate-45" : "translate-y-0"
+            }`}
+          ></div>
+          <div
+            className={`h-[0.2rem] w-10 rounded-[10rem] bg-white transition-all duration-300 ease-in-out ${
+              isActive ? "opacity-0" : "opacity-100"
+            }`}
+          ></div>
+          <div
+            className={`h-[0.2rem] w-10 rounded-[10rem] bg-white transition-all duration-300 ease-in-out ${
+              isActive ? "-translate-y-[10px] -rotate-45" : "translate-y-0"
+            }`}
+          ></div>
         </div>
 
         <div
-          className={`${navActive ? styles.active : ""} ${
-            styles.nav__menuList
+          className={`fixed left-0 flex w-full flex-col items-center justify-center gap-20 bg-[#080808f3] px-4 py-6 transition-all duration-500 ease-in-out [font-family:'Gudea-Regular'] max-[800px]:h-screen min-[801px]:static min-[801px]:ml-auto min-[801px]:h-auto min-[801px]:w-auto min-[801px]:flex-row min-[801px]:items-center min-[801px]:gap-20 min-[801px]:bg-transparent min-[801px]:px-0 min-[801px]:py-0 min-[801px]:pt-0 min-[801px]:text-[1.2rem] min-[801px]:leading-7 ${
+            navActive
+              ? "top-0 z-[9] opacity-100"
+              : "-top-[100vh] z-[-1] opacity-0 min-[801px]:top-0 min-[801px]:z-auto min-[801px]:opacity-100"
           }`}
         >
-          {itemNavbar.map((item, index) => {
+          {itemNavbar.map((item) => {
             const active =
               item.link === "/"
                 ? pathname === "/"
                 : pathname.startsWith(item.link);
             return (
-              <div key={index}>
+              <div key={item.link}>
                 <Link
                   href={item.link}
-                  onClick={handleClick}
-                  className={`${styles.nav__item} ${
-                    active ? styles.activeLink : ""
+                  onClick={() => {
+                    if (navActive) {
+                      handleClick();
+                    }
+                  }}
+                  className={`relative cursor-pointer text-center text-xl text-white transition-all duration-300 ease-in-out min-[801px]:text-sm ${
+                    active
+                      ? "border-b border-b-[#5c0adf]"
+                      : "hover:border-b hover:border-b-[#5c0adf]"
                   }`}
                 >
-                  <div
-                    className={`${styles.nav__item} ${
-                      active ? styles.activeLink : ""
-                    }`}
-                  >
-                    {item.text}
-                  </div>
+                  {item.text}
                 </Link>
               </div>
             );

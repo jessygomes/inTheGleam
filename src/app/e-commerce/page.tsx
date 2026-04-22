@@ -36,47 +36,75 @@ export const metadata: Metadata = {
 export default function Ecommerce() {
   return (
     <>
-      {/* Hero Section avec gradient moderne */}
-      <section className="relative min-h-screen bg-white pt-52 pb-16 overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative min-h-screen bg-white pt-36 lg:pt-32 pb-20 overflow-hidden flex flex-col justify-center">
         {/* Éléments décoratifs */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple2 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl"></div>
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-purple2 rounded-full blur-[120px] opacity-10"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-purple3 rounded-full blur-[100px] opacity-10"></div>
         </div>
 
-        <div className="relative container mx-auto px-4 text-center">
+        <div className="relative container mx-auto px-4 text-center z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-5xl font-bold text-blackGleam mb-8 tracking-wide">
-              E-commerce Sur Mesure
+            {/* Eyebrow */}
+            <span className="inline-block mb-6 text-xs font-Gudea tracking-[.35em] uppercase text-purple2 border border-purple2/40 rounded-full px-4 py-1.5">
+              inthegleam
+            </span>
+
+            <h1 className="font-semibold text-blackGleam text-center text-3xl sm:text-5xl tracking-[.15em] uppercase mb-6 font-Gudea">
+              <span className="font-DissolveRegular mr-1 text-5xl sm:text-7xl text-blackGleam">
+                E
+              </span>
+              -commerce{" "}
+              <span className="bg-gradient-to-r from-purple3 to-purple2 bg-clip-text text-transparent">
+                Sur Mesure
+              </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Transformez votre activité avec une{" "}
-              <span className="text-purple2 font-semibold">
-                boutique en ligne professionnelle
-              </span>
-              . Près d&apos;un Français sur deux achète en ligne - saisissez
-              cette opportunité !
+            <p className="font-Gudea tracking-wider text-sm sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Transformez votre activité avec une boutique en ligne
+              professionnelle. Près d&apos;un Français sur deux achète en ligne
+              — saisissez cette opportunité.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8 mt-16 text-center">
-              <div className="bg-blackGleam/10 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20 hover:bg-purple2/20 transition-all duration-300">
-                <div className="text-3xl font-bold text-purple2 mb-2">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
+              <Link
+                href="/contact"
+                className="font-Gudea font-semibold text-sm sm:text-base bg-gradient-to-l from-purple2 to-purple3 rounded-md py-3 px-6 uppercase tracking-[.25em] text-white hover:opacity-90 transition-all duration-300 hover:scale-105"
+              >
+                Lancer mon projet
+              </Link>
+              <Link
+                href="#realisations"
+                className="font-Gudea font-semibold text-sm sm:text-base border border-blackGleam/20 rounded-md py-3 px-6 uppercase tracking-[.25em] text-blackGleam/70 hover:border-purple2/60 hover:text-purple2 transition-all duration-300"
+              >
+                Voir nos réalisations
+              </Link>
+            </div>
+
+            {/* Stats */}
+            <div className="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+              <div className="rounded-xl p-5 border border-blackGleam/10 bg-blackGleam/5 hover:border-purple2/40 hover:bg-purple2/5 transition-all duration-300">
+                <div className="text-3xl font-bold text-purple2 mb-1 font-Gudea">
                   +150%
                 </div>
-                <div className="text-blackGleam  text-sm">
-                  Augmentation moyenne des ventes
+                <div className="text-blackGleam/50 text-xs font-Gudea tracking-wide uppercase">
+                  Augmentation des ventes
                 </div>
               </div>
-              <div className="bg-blackGleam/10 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20 hover:bg-purple2/20 transition-all duration-300">
-                <div className="text-3xl font-bold text-purple2 mb-2">24/7</div>
-                <div className="text-blackGleam text-sm">
+              <div className="rounded-xl p-5 border border-blackGleam/10 bg-blackGleam/5 hover:border-purple2/40 hover:bg-purple2/5 transition-all duration-300">
+                <div className="text-3xl font-bold text-purple2 mb-1 font-Gudea">
+                  24/7
+                </div>
+                <div className="text-blackGleam/50 text-xs font-Gudea tracking-wide uppercase">
                   Ventes automatisées
                 </div>
               </div>
-              <div className="bg-blackGleam/10 backdrop-blur-sm rounded-2xl p-6 border border-purple2/20 hover:bg-purple2/20 transition-all duration-300">
-                <div className="text-3xl font-bold text-purple2 mb-2">∞</div>
-                <div className="text-blackGleam text-sm">
+              <div className="rounded-xl p-5 border border-blackGleam/10 bg-blackGleam/5 hover:border-purple2/40 hover:bg-purple2/5 transition-all duration-300">
+                <div className="text-3xl font-bold text-purple2 mb-1 font-Gudea">
+                  ∞
+                </div>
+                <div className="text-blackGleam/50 text-xs font-Gudea tracking-wide uppercase">
                   Portée géographique
                 </div>
               </div>
@@ -85,9 +113,9 @@ export default function Ecommerce() {
         </div>
 
         {/* Flèche pour scroll */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <svg
-            className="w-6 h-6 text-blackGleam"
+            className="w-6 h-6 text-blackGleam/40"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -229,41 +257,34 @@ export default function Ecommerce() {
           </div>
 
           {/* Call to action modernisé */}
-          <div className="text-center mt-16">
-            <div className="bg-gradient-to-r from-purple3 to-purple2 rounded-3xl p-12 max-w-4xl mx-auto">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-Gudea">
-                Prêt à révolutionner vos ventes en ligne ?
-              </h3>
-              <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-Gudea leading-relaxed">
-                Rejoignez nos clients qui ont multiplié leur chiffre
-                d&apos;affaires grâce à leur boutique e-commerce sur mesure.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center bg-white text-blackGleam font-bold py-4 px-8 rounded-2xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg font-Gudea"
-              >
-                Lancer mon projet e-commerce
-                <svg
-                  className="ml-3 w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+          <div className="mt-16 px-28 mx-auto">
+            <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple3 to-purple2 px-6 py-8 text-center">
+              <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="text-left">
+                  <p className="text-xs font-Gudea tracking-[.3em] uppercase text-white/50 mb-1">
+                    Prêt à démarrer ?
+                  </p>
+                  <h3 className="font-semibold text-white text-lg sm:text-2xl tracking-[.1em] uppercase font-Gudea">
+                    Révolutionnez vos ventes en ligne
+                  </h3>
+                </div>
+                <Link
+                  href="/contact"
+                  className="shrink-0 inline-flex items-center gap-2 font-Gudea font-semibold text-sm bg-white text-purple2 rounded-md py-2.5 px-5 uppercase tracking-[.2em] hover:bg-white/90 transition-all duration-300 hover:scale-105"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </Link>
+                  Lancer mon projet
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Section réalisations modernisée */}
-      <section className="py-20 bg-blackGleam/10">
+      <section id="realisations" className="py-20 bg-blackGleam/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-blackGleam mb-4 uppercase tracking-[.15em] font-Gudea">
@@ -277,25 +298,25 @@ export default function Ecommerce() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
             {/* KAP Designer */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
               <div className="relative overflow-hidden">
                 <Image
                   src={"/images/kap1.png"}
                   width={600}
                   height={400}
                   alt="Kap Designer - Configurateur de terrasse en ligne"
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+              <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-base font-bold text-blackGleam mb-1.5 font-Gudea">
                   Kap Designer
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed font-Gudea flex-1">
                   Configurateur de terrasse en ligne en 2D pour agencer son
                   espaces extérieur et passer à la commande de ses pots et
                   plantes. Design épuré et navigation intuitive pour mettre en
@@ -306,11 +327,11 @@ export default function Ecommerce() {
                 <Link
                   target="_blank"
                   href={""}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
                 >
                   <span>Visiter le site</span>
                   <svg
-                    className="ml-2 w-4 h-4"
+                    className="ml-2 w-3.5 h-3.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -327,23 +348,23 @@ export default function Ecommerce() {
             </div>
 
             {/* Belle Nippe */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
               <div className="relative overflow-hidden">
                 <Image
                   src={"/images/bellenippe.png"}
                   width={600}
                   height={400}
                   alt="Belle Nippe - Boutique de mode en ligne"
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+              <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-base font-bold text-blackGleam mb-1.5 font-Gudea">
                   Belle Nippe
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed font-Gudea flex-1">
                   Boutique de mode en ligne élégante avec gestion des stocks en
                   temps réel, système de paiement sécurisé et interface
                   utilisateur intuitive.
@@ -352,11 +373,11 @@ export default function Ecommerce() {
                 <Link
                   target="_blank"
                   href={"https://www.bellenippe.fr/"}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
                 >
                   <span>Visiter le site</span>
                   <svg
-                    className="ml-2 w-4 h-4"
+                    className="ml-2 w-3.5 h-3.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -373,23 +394,23 @@ export default function Ecommerce() {
             </div>
 
             {/* Téléphone du Monde */}
-            <div className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100">
+            <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
               <div className="relative overflow-hidden">
                 <Image
                   src={"/images/phonedumonde.png"}
                   width={600}
                   height={400}
                   alt="Téléphone du Monde - Boutique de téléphonie"
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blackGleam/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blackGleam mb-3 font-Gudea">
+              <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-base font-bold text-blackGleam mb-1.5 font-Gudea">
                   Téléphone du Monde
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed font-Gudea">
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed font-Gudea flex-1">
                   Plateforme e-commerce spécialisée dans la vente de smartphones
                   et accessoires, avec système de comparaison avancé et support
                   client intégré.
@@ -398,11 +419,11 @@ export default function Ecommerce() {
                 <Link
                   target="_blank"
                   href={"https://www.telephonedumonde.com/"}
-                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
+                  className="inline-flex items-center justify-center w-full bg-gradient-to-r from-purple2 to-purple3 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-Gudea"
                 >
                   <span>Visiter le site</span>
                   <svg
-                    className="ml-2 w-4 h-4"
+                    className="ml-2 w-3.5 h-3.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
